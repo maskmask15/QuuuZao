@@ -6668,3 +6668,45 @@ error cannot find a jtag device with node id $node_id}], Result: [null, ]. Thr
 
 !ENTRY com.xilinx.sdk.utils 0 0 2024-03-13 17:03:54.604
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-1: Launching SystemDebugger_cameralink_udp_system
+!SESSION 2024-03-20 17:02:21.844 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-03-20 17:02:23.291
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2024-03-20 17:02:26.617
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-20 17:02:31.645
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-20 17:02:31.645
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-20 17:02:31.648
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-20 17:02:31.659
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-20 17:02:31.661
+!MESSAGE XSCT Command: [setws E:/new/ps_code_v1.0/git_test/QuuuZao], Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-20 17:02:31.663
+!MESSAGE XSCT command with result: [setws E:/new/ps_code_v1.0/git_test/QuuuZao], Result: [null, ]. Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-20 17:02:32.149
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-20 17:02:32.400
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-20 17:02:32.401
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-20 17:02:32.417
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, D:/installPath/vitis/Vitis/2021.2/data]. Thread: Worker-3: Initializing s/w repositories

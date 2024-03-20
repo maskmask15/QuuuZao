@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+    <libraryInfo home="D:\installPath\vitis\Vitis\2021.2\tps\win64\jre11.0.11_9" version="11.0.11"/>
     <libraryInfo home="C:\Xilinx_vitis\Vitis\2021.2\tps\win64\jre11.0.11_9" version="11.0.11"/>
 </libraryInfos>
