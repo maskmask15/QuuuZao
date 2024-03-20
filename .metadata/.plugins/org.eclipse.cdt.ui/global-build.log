@@ -1,0 +1,82 @@
+20:35:19 **** Build of project lwip_modi_3 ****
+buildplatform.bat 56030 lwip_modi_3  
+XSDB Server Channel: tcfchan#3
+Reading the platform  : "lwip_modi_3"
+Failed to set param in mss for LIB
+Failed to set param in mss for LIB
+Failed to set param in mss for LIB
+Failed to set param in mss for LIB
+Failed to set param in mss for LIB
+Failed to set param in mss for LIB
+Failed to set param in mss for LIB
+Reading the platform  : "lwip_modi_3"
+Failed to set param in mss for LIB
+Failed to set param in mss for LIB
+Failed to set param in mss for LIB
+Failed to set param in mss for LIB
+Failed to set param in mss for LIB
+Failed to set param in mss for LIB
+Failed to set param in mss for LIB
+No Platform exists with name:  lwip_modi_3
+    invoked from within
+"::tcf::eval -progress {apply {{msg} {puts $msg}}} {tcf_send_command tcfchan#0 xsdb eval s es {{platform active lwip_modi_3; platform generate }}}"
+    (procedure "::tcf::send_command" line 4)
+    invoked from within
+"tcf send_command $::xsdb::curchan xsdb eval s es [list "platform active $PLATFORM_NAME; platform generate $target"]"
+    invoked from within
+"if { $iswindows == 1 } {    
+
+    set XSDB_PORT [lindex $argv 0]
+    set PLATFORM_NAME [lindex $argv 1]
+    set arglen [llength $argv]
+    set lastind..."
+    (file "C:/Xilinx_vitis/Vitis/2021.2\scripts\vitis\util\buildplatform.tcl" line 11)
+20:36:08 **** Build of configuration Debug for project single_udp_test ****
+make all 
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+../src/display_demo.c: In function 'resetVideoFmt':
+../src/display_demo.c:67:3: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   67 |   (unsigned int)pFrames[0], (unsigned int)pFrames[1], (unsigned int)pFrames[2]);
+      |   ^
+../src/display_demo.c:67:29: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   67 |   (unsigned int)pFrames[0], (unsigned int)pFrames[1], (unsigned int)pFrames[2]);
+      |                             ^
+../src/display_demo.c:67:55: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   67 |   (unsigned int)pFrames[0], (unsigned int)pFrames[1], (unsigned int)pFrames[2]);
+      |                                                       ^
+'Finished building: ../src/display_demo.c'
+' '
+'Building file: ../src/lwip_app.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/lwip_app.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include -MMD -MP -MF"src/lwip_app.d" -MT"src/lwip_app.o" -o "src/lwip_app.o" "../src/lwip_app.c"
+../src/lwip_app.c: In function 'lwip_loop':
+../src/lwip_app.c:39:30: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   39 |    Xil_DCacheInvalidateRange((u32)pFrames[index], frame_length_curr);
+      |                              ^
+'Finished building: ../src/lwip_app.c'
+' '
+'Building file: ../src/vdma.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/vdma.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include -MMD -MP -MF"src/vdma.d" -MT"src/vdma.o" -o "src/vdma.o" "../src/vdma.c"
+'Finished building: ../src/vdma.c'
+' '
+'Building target: single_udp_test.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bsplib/lib -o "single_udp_test.elf"  ./src/display_demo.o ./src/echo.o ./src/lwip_app.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/udp_init.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: single_udp_test.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size single_udp_test.elf  |tee "single_udp_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 198015	   8096	62984477	63190588	3c4363c	single_udp_test.elf
+'Finished building: single_udp_test.elf.size'
+' '
+20:36:10 **** Build of configuration Debug for project single_udp_test_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 56030 D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/lwip_modi_3.xpfm standalone_domain D:/project/vitis_final/single_udp_test_system/Debug/system.bif
+sdcard_gen --xpfm D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/lwip_modi_3.xpfm --sys_config lwip_modi_3 --bif D:/project/vitis_final/single_udp_test_system/Debug/system.bif --bitstream D:/project/vitis_final/single_udp_test/_ide/bitstream/cameralink_display_wrapper_1_24_2.bit --elf D:/project/vitis_final/single_udp_test/Debug/single_udp_test.elf,psu_cortexa53_0
+creating BOOT.BIN using D:/project/vitis_final/single_udp_test/_ide/bitstream/cameralink_display_wrapper_1_24_2.bit
+Running C:/Xilinx_vitis/Vitis/2021.2/bin/bootgen -arch zynqmp -image D:/project/vitis_final/single_udp_test_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

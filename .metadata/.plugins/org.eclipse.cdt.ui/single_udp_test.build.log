@@ -1,0 +1,45 @@
+20:36:08 **** Build of configuration Debug for project single_udp_test ****
+make all 
+'Building file: ../src/display_demo.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+../src/display_demo.c: In function 'resetVideoFmt':
+../src/display_demo.c:67:3: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   67 |   (unsigned int)pFrames[0], (unsigned int)pFrames[1], (unsigned int)pFrames[2]);
+      |   ^
+../src/display_demo.c:67:29: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   67 |   (unsigned int)pFrames[0], (unsigned int)pFrames[1], (unsigned int)pFrames[2]);
+      |                             ^
+../src/display_demo.c:67:55: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   67 |   (unsigned int)pFrames[0], (unsigned int)pFrames[1], (unsigned int)pFrames[2]);
+      |                                                       ^
+'Finished building: ../src/display_demo.c'
+' '
+'Building file: ../src/lwip_app.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/lwip_app.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include -MMD -MP -MF"src/lwip_app.d" -MT"src/lwip_app.o" -o "src/lwip_app.o" "../src/lwip_app.c"
+../src/lwip_app.c: In function 'lwip_loop':
+../src/lwip_app.c:39:30: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   39 |    Xil_DCacheInvalidateRange((u32)pFrames[index], frame_length_curr);
+      |                              ^
+'Finished building: ../src/lwip_app.c'
+' '
+'Building file: ../src/vdma.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/vdma.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include -MMD -MP -MF"src/vdma.d" -MT"src/vdma.o" -o "src/vdma.o" "../src/vdma.c"
+'Finished building: ../src/vdma.c'
+' '
+'Building target: single_udp_test.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bsplib/lib -o "single_udp_test.elf"  ./src/display_demo.o ./src/echo.o ./src/lwip_app.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/udp_init.o ./src/vdma.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: single_udp_test.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size single_udp_test.elf  |tee "single_udp_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 198015	   8096	62984477	63190588	3c4363c	single_udp_test.elf
+'Finished building: single_udp_test.elf.size'
+' '
+
+20:36:10 Build Finished (took 1s.680ms)
+

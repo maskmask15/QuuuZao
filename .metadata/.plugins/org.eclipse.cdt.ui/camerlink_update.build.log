@@ -1,0 +1,686 @@
+21:02:36 **** Build of configuration Debug for project camerlink_update ****
+make all 
+'Building file: ../src/xdm/dma.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/xdm/dma.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/xdm/dma.d" -MT"src/xdm/dma.o" -o "src/xdm/dma.o" "../src/xdm/dma.c"
+In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xaxidma_bdring.h:60,
+                 from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xaxidma.h:467,
+                 from ../src/xdm/dma.h:5,
+                 from ../src/xdm/dma.c:1:
+../src/xdm/dma.c: In function 'GaussianBlur_s64_FPGA_while':
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   43 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/xdm/dma.c:87:10: note: in expansion of macro 'XST_FAILURE'
+   87 |   return XST_FAILURE;
+      |          ^~~~~~~~~~~
+../src/xdm/dma.c:74:6: note: declared here
+   74 | void GaussianBlur_s64_FPGA_while(const mat_s32 *src, mat_s32 *dst){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xaxidma_bdring.h:60,
+                 from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xaxidma.h:467,
+                 from ../src/xdm/dma.h:5,
+                 from ../src/xdm/dma.c:1:
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   43 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/xdm/dma.c:94:10: note: in expansion of macro 'XST_FAILURE'
+   94 |   return XST_FAILURE;
+      |          ^~~~~~~~~~~
+../src/xdm/dma.c:74:6: note: declared here
+   74 | void GaussianBlur_s64_FPGA_while(const mat_s32 *src, mat_s32 *dst){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xaxidma_bdring.h:60,
+                 from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xaxidma.h:467,
+                 from ../src/xdm/dma.h:5,
+                 from ../src/xdm/dma.c:1:
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xstatus.h:42:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   42 | #define XST_SUCCESS                     0L
+      |                                         ^~
+../src/xdm/dma.c:102:9: note: in expansion of macro 'XST_SUCCESS'
+  102 |  return XST_SUCCESS;
+      |         ^~~~~~~~~~~
+../src/xdm/dma.c:74:6: note: declared here
+   74 | void GaussianBlur_s64_FPGA_while(const mat_s32 *src, mat_s32 *dst){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/xdm/dma.c'
+' '
+'Building file: ../src/xdm/dma_DeNU_2.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/xdm/dma_DeNU_2.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/xdm/dma_DeNU_2.d" -MT"src/xdm/dma_DeNU_2.o" -o "src/xdm/dma_DeNU_2.o" "../src/xdm/dma_DeNU_2.c"
+In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xaxidma_bdring.h:60,
+                 from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xaxidma.h:467,
+                 from ../src/xdm/dma_DeNU_2.h:5,
+                 from ../src/xdm/dma_DeNU_2.c:1:
+../src/xdm/dma_DeNU_2.c: In function 'GaussianBlur_s64_FPGA':
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   43 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/xdm/dma_DeNU_2.c:250:10: note: in expansion of macro 'XST_FAILURE'
+  250 |   return XST_FAILURE;
+      |          ^~~~~~~~~~~
+../src/xdm/dma_DeNU_2.c:240:6: note: declared here
+  240 | void GaussianBlur_s64_FPGA(const mat_s32 *src, mat_s32 *dst){
+      |      ^~~~~~~~~~~~~~~~~~~~~
+In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xaxidma_bdring.h:60,
+                 from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xaxidma.h:467,
+                 from ../src/xdm/dma_DeNU_2.h:5,
+                 from ../src/xdm/dma_DeNU_2.c:1:
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   43 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/xdm/dma_DeNU_2.c:256:10: note: in expansion of macro 'XST_FAILURE'
+  256 |   return XST_FAILURE;
+      |          ^~~~~~~~~~~
+../src/xdm/dma_DeNU_2.c:240:6: note: declared here
+  240 | void GaussianBlur_s64_FPGA(const mat_s32 *src, mat_s32 *dst){
+      |      ^~~~~~~~~~~~~~~~~~~~~
+In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xaxidma_bdring.h:60,
+                 from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xaxidma.h:467,
+                 from ../src/xdm/dma_DeNU_2.h:5,
+                 from ../src/xdm/dma_DeNU_2.c:1:
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   43 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/xdm/dma_DeNU_2.c:267:10: note: in expansion of macro 'XST_FAILURE'
+  267 |   return XST_FAILURE;
+      |          ^~~~~~~~~~~
+../src/xdm/dma_DeNU_2.c:240:6: note: declared here
+  240 | void GaussianBlur_s64_FPGA(const mat_s32 *src, mat_s32 *dst){
+      |      ^~~~~~~~~~~~~~~~~~~~~
+In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xaxidma_bdring.h:60,
+                 from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xaxidma.h:467,
+                 from ../src/xdm/dma_DeNU_2.h:5,
+                 from ../src/xdm/dma_DeNU_2.c:1:
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xstatus.h:42:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   42 | #define XST_SUCCESS                     0L
+      |                                         ^~
+../src/xdm/dma_DeNU_2.c:270:9: note: in expansion of macro 'XST_SUCCESS'
+  270 |  return XST_SUCCESS;
+      |         ^~~~~~~~~~~
+../src/xdm/dma_DeNU_2.c:240:6: note: declared here
+  240 | void GaussianBlur_s64_FPGA(const mat_s32 *src, mat_s32 *dst){
+      |      ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/xdm/dma_DeNU_2.c:2:
+../src/xdm/dma_DeNU_2.c: At top level:
+../src/xdm/dma_config.h:29:13: warning: 'setup_intr_system' declared 'static' but never defined [-Wunused-function]
+   29 | static int  setup_intr_system();
+      |             ^~~~~~~~~~~~~~~~~
+../src/xdm/dma_config.h:18:16: warning: 'deStrip_axidma' defined but not used [-Wunused-variable]
+   18 | static XAxiDma deStrip_axidma;
+      |                ^~~~~~~~~~~~~~
+../src/xdm/dma_config.h:15:16: warning: 'deNU2_axidma' defined but not used [-Wunused-variable]
+   15 | static XAxiDma deNU2_axidma;
+      |                ^~~~~~~~~~~~
+'Finished building: ../src/xdm/dma_DeNU_2.c'
+' '
+'Building file: ../src/nuc/DeFPN.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/nuc/DeFPN.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/nuc/DeFPN.d" -MT"src/nuc/DeFPN.o" -o "src/nuc/DeFPN.o" "../src/nuc/DeFPN.c"
+'Finished building: ../src/nuc/DeFPN.c'
+' '
+'Building file: ../src/nuc/DeNU_2.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/nuc/DeNU_2.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/nuc/DeNU_2.d" -MT"src/nuc/DeNU_2.o" -o "src/nuc/DeNU_2.o" "../src/nuc/DeNU_2.c"
+../src/nuc/DeNU_2.c: In function 'DeNU_s32':
+../src/nuc/DeNU_2.c:55:53: warning: passing argument 3 of 'createMat_s32_A' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   55 |     mat_s32 *local_mean_src = createMat_s32_A(H, W, LMSP);   // local_mean
+      |                                                     ^~~~
+In file included from ../src/nuc/utils.h:10,
+                 from ../src/nuc/InitParam.h:8,
+                 from ../src/nuc/DeNU_2.c:5:
+../src/nuc/../mat/mat.h:50:55: note: expected 'int32_t *' {aka 'int *'} but argument is of type 'volatile int32_t *' {aka 'volatile int *'}
+   50 | mat_s32 *createMat_s32_A(int rows, int cols, int32_t *data);
+      |                                              ~~~~~~~~~^~~~
+../src/nuc/DeNU_2.c:56:49: warning: passing argument 3 of 'createMat_s32_A' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   56 |     mat_s32 *local_mean = createMat_s32_A(H, W, LMP);   // local_mean
+      |                                                 ^~~
+In file included from ../src/nuc/utils.h:10,
+                 from ../src/nuc/InitParam.h:8,
+                 from ../src/nuc/DeNU_2.c:5:
+../src/nuc/../mat/mat.h:50:55: note: expected 'int32_t *' {aka 'int *'} but argument is of type 'volatile int32_t *' {aka 'volatile int *'}
+   50 | mat_s32 *createMat_s32_A(int rows, int cols, int32_t *data);
+      |                                              ~~~~~~~~~^~~~
+../src/nuc/DeNU_2.c:66:56: warning: passing argument 3 of 'createMat_s32_A' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   66 |     mat_s32 *sigmaU_square_src = createMat_s32_A(H, W, SSSP);   // local_mean sigmaU_square
+      |                                                        ^~~~
+In file included from ../src/nuc/utils.h:10,
+                 from ../src/nuc/InitParam.h:8,
+                 from ../src/nuc/DeNU_2.c:5:
+../src/nuc/../mat/mat.h:50:55: note: expected 'int32_t *' {aka 'int *'} but argument is of type 'volatile int32_t *' {aka 'volatile int *'}
+   50 | mat_s32 *createMat_s32_A(int rows, int cols, int32_t *data);
+      |                                              ~~~~~~~~~^~~~
+../src/nuc/DeNU_2.c:67:52: warning: passing argument 3 of 'createMat_s32_A' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   67 |     mat_s32 *sigmaU_square = createMat_s32_A(H, W, SSP);   // local_mean sigmaU_square
+      |                                                    ^~~
+In file included from ../src/nuc/utils.h:10,
+                 from ../src/nuc/InitParam.h:8,
+                 from ../src/nuc/DeNU_2.c:5:
+../src/nuc/../mat/mat.h:50:55: note: expected 'int32_t *' {aka 'int *'} but argument is of type 'volatile int32_t *' {aka 'volatile int *'}
+   50 | mat_s32 *createMat_s32_A(int rows, int cols, int32_t *data);
+      |                                              ~~~~~~~~~^~~~
+../src/nuc/DeNU_2.c:48:9: warning: unused variable 'NU_kSize' [-Wunused-variable]
+   48 |     int NU_kSize = *((int *) value);
+      |         ^~~~~~~~
+'Finished building: ../src/nuc/DeNU_2.c'
+' '
+'Building file: ../src/nuc/DeNoise.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/nuc/DeNoise.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/nuc/DeNoise.d" -MT"src/nuc/DeNoise.o" -o "src/nuc/DeNoise.o" "../src/nuc/DeNoise.c"
+../src/nuc/DeNoise.c: In function 'DeNoise':
+../src/nuc/DeNoise.c:44:23: warning: unused variable 'end_time' [-Wunused-variable]
+   44 |     XTime start_time, end_time;
+      |                       ^~~~~~~~
+../src/nuc/DeNoise.c:44:11: warning: unused variable 'start_time' [-Wunused-variable]
+   44 |     XTime start_time, end_time;
+      |           ^~~~~~~~~~
+'Finished building: ../src/nuc/DeNoise.c'
+' '
+'Building file: ../src/nuc/DeShading.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/nuc/DeShading.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/nuc/DeShading.d" -MT"src/nuc/DeShading.o" -o "src/nuc/DeShading.o" "../src/nuc/DeShading.c"
+../src/nuc/DeShading.c: In function 'InitDeShading':
+../src/nuc/DeShading.c:41:5: warning: implicit declaration of function 'Read'; did you mean 'read'? [-Wimplicit-function-declaration]
+   41 |     Read("resShading.raw",resShading->data,resShading->rows * resShading->cols * 4, 0);
+      |     ^~~~
+      |     read
+'Finished building: ../src/nuc/DeShading.c'
+' '
+'Building file: ../src/nuc/DeStrip.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/nuc/DeStrip.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/nuc/DeStrip.d" -MT"src/nuc/DeStrip.o" -o "src/nuc/DeStrip.o" "../src/nuc/DeStrip.c"
+../src/nuc/DeStrip.c: In function 'DeStrip_loop_once':
+../src/nuc/DeStrip.c:76:2: warning: implicit declaration of function 'dmaSend' [-Wimplicit-function-declaration]
+   76 |  dmaSend(DeStrip_DMA_DEV_ID,data->data, data->cols * data->rows * 4);
+      |  ^~~~~~~
+../src/nuc/DeStrip.c:85:2: warning: implicit declaration of function 'waitDeStripTxInr' [-Wimplicit-function-declaration]
+   85 |  waitDeStripTxInr();
+      |  ^~~~~~~~~~~~~~~~
+../src/nuc/DeStrip.c:86:2: warning: implicit declaration of function 'DeStrip_RT_Init' [-Wimplicit-function-declaration]
+   86 |  DeStrip_RT_Init();
+      |  ^~~~~~~~~~~~~~~
+../src/nuc/DeStrip.c: At top level:
+../src/nuc/DeStrip.c:89:6: warning: conflicting types for 'dmaSend'
+   89 | void dmaSend(int device_id,void *src,int len){
+      |      ^~~~~~~
+../src/nuc/DeStrip.c:76:2: note: previous implicit declaration of 'dmaSend' was here
+   76 |  dmaSend(DeStrip_DMA_DEV_ID,data->data, data->cols * data->rows * 4);
+      |  ^~~~~~~
+../src/nuc/DeStrip.c: In function 'dmaSend':
+../src/nuc/DeStrip.c:92:34: warning: implicit declaration of function 'get_Axidma' [-Wimplicit-function-declaration]
+   92 |  status = XAxiDma_SimpleTransfer(get_Axidma(device_id), (UINTPTR) src,
+      |                                  ^~~~~~~~~~
+../src/nuc/DeStrip.c:92:34: warning: passing argument 1 of 'XAxiDma_SimpleTransfer' makes pointer from integer without a cast [-Wint-conversion]
+   92 |  status = XAxiDma_SimpleTransfer(get_Axidma(device_id), (UINTPTR) src,
+      |                                  ^~~~~~~~~~~~~~~~~~~~~
+      |                                  |
+      |                                  int
+In file included from ../src/nuc/../xdm/dma.h:5,
+                 from ../src/nuc/DeStrip.c:13:
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xaxidma.h:730:37: note: expected 'XAxiDma *' but argument is of type 'int'
+  730 | u32 XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, UINTPTR BuffAddr, u32 Length,
+      |                            ~~~~~~~~~^~~~~~~~~~~
+In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xscugic.h:188,
+                 from ../src/nuc/shareOpConfig.h:8,
+                 from ../src/nuc/DeStrip.c:8:
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   43 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/nuc/DeStrip.c:95:10: note: in expansion of macro 'XST_FAILURE'
+   95 |   return XST_FAILURE;
+      |          ^~~~~~~~~~~
+../src/nuc/DeStrip.c:89:6: note: declared here
+   89 | void dmaSend(int device_id,void *src,int len){
+      |      ^~~~~~~
+../src/nuc/DeStrip.c: In function 'dmaGet':
+../src/nuc/DeStrip.c:102:34: warning: passing argument 1 of 'XAxiDma_SimpleTransfer' makes pointer from integer without a cast [-Wint-conversion]
+  102 |  status = XAxiDma_SimpleTransfer(get_Axidma(device_id), (UINTPTR) dst,
+      |                                  ^~~~~~~~~~~~~~~~~~~~~
+      |                                  |
+      |                                  int
+In file included from ../src/nuc/../xdm/dma.h:5,
+                 from ../src/nuc/DeStrip.c:13:
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xaxidma.h:730:37: note: expected 'XAxiDma *' but argument is of type 'int'
+  730 | u32 XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, UINTPTR BuffAddr, u32 Length,
+      |                            ~~~~~~~~~^~~~~~~~~~~
+In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xscugic.h:188,
+                 from ../src/nuc/shareOpConfig.h:8,
+                 from ../src/nuc/DeStrip.c:8:
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   43 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/nuc/DeStrip.c:105:10: note: in expansion of macro 'XST_FAILURE'
+  105 |   return XST_FAILURE;
+      |          ^~~~~~~~~~~
+../src/nuc/DeStrip.c:100:6: note: declared here
+  100 | void dmaGet(int device_id,void *dst,int len){
+      |      ^~~~~~
+../src/nuc/DeStrip.c: In function 'DeStripInrErrorHander':
+../src/nuc/DeStrip.c:111:5: warning: implicit declaration of function 'get_DeStrip_error' [-Wimplicit-function-declaration]
+  111 |  if(get_DeStrip_error()){
+      |     ^~~~~~~~~~~~~~~~~
+../src/nuc/DeStrip.c: In function 'waitDeStripRxInr':
+../src/nuc/DeStrip.c:131:9: warning: implicit declaration of function 'get_DeStrip_rx_done' [-Wimplicit-function-declaration]
+  131 |  while(!get_DeStrip_rx_done() && !get_DeStrip_error());
+      |         ^~~~~~~~~~~~~~~~~~~
+../src/nuc/DeStrip.c: At top level:
+../src/nuc/DeStrip.c:134:6: warning: conflicting types for 'waitDeStripTxInr'
+  134 | void waitDeStripTxInr(){
+      |      ^~~~~~~~~~~~~~~~
+../src/nuc/DeStrip.c:85:2: note: previous implicit declaration of 'waitDeStripTxInr' was here
+   85 |  waitDeStripTxInr();
+      |  ^~~~~~~~~~~~~~~~
+../src/nuc/DeStrip.c: In function 'waitDeStripTxInr':
+../src/nuc/DeStrip.c:135:9: warning: implicit declaration of function 'get_DeStrip_tx_done' [-Wimplicit-function-declaration]
+  135 |  while(!get_DeStrip_tx_done() && !get_DeStrip_error());
+      |         ^~~~~~~~~~~~~~~~~~~
+../src/nuc/DeStrip.c: In function 'DeStrip2_s32':
+../src/nuc/DeStrip.c:211:40: warning: passing argument 3 of 'createMat_s32_A' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  211 |     mat_s32 *Y = createMat_s32_A(H, W, YP);
+      |                                        ^~
+In file included from ../src/nuc/utils.h:10,
+                 from ../src/nuc/InitParam.h:8,
+                 from ../src/nuc/DeStrip.c:5:
+../src/nuc/../mat/mat.h:50:55: note: expected 'int32_t *' {aka 'int *'} but argument is of type 'volatile int32_t *' {aka 'volatile int *'}
+   50 | mat_s32 *createMat_s32_A(int rows, int cols, int32_t *data);
+      |                                              ~~~~~~~~~^~~~
+../src/nuc/DeStrip.c:213:42: warning: passing argument 3 of 'createMat_s32_A' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  213 |     mat_s32 *tmp = createMat_s32_A(H, W, TMPP);
+      |                                          ^~~~
+In file included from ../src/nuc/utils.h:10,
+                 from ../src/nuc/InitParam.h:8,
+                 from ../src/nuc/DeStrip.c:5:
+../src/nuc/../mat/mat.h:50:55: note: expected 'int32_t *' {aka 'int *'} but argument is of type 'volatile int32_t *' {aka 'volatile int *'}
+   50 | mat_s32 *createMat_s32_A(int rows, int cols, int32_t *data);
+      |                                              ~~~~~~~~~^~~~
+../src/nuc/DeStrip.c:214:44: warning: passing argument 3 of 'createMat_s32_A' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  214 |     mat_s32 *tmp_T = createMat_s32_A(W, H, TMPTP);
+      |                                            ^~~~~
+In file included from ../src/nuc/utils.h:10,
+                 from ../src/nuc/InitParam.h:8,
+                 from ../src/nuc/DeStrip.c:5:
+../src/nuc/../mat/mat.h:50:55: note: expected 'int32_t *' {aka 'int *'} but argument is of type 'volatile int32_t *' {aka 'volatile int *'}
+   50 | mat_s32 *createMat_s32_A(int rows, int cols, int32_t *data);
+      |                                              ~~~~~~~~~^~~~
+../src/nuc/DeStrip.c:216:41: warning: passing argument 3 of 'createMat_s32_A' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  216 |     mat_s32 *S2 = createMat_s32_A(H, W, S2P);
+      |                                         ^~~
+In file included from ../src/nuc/utils.h:10,
+                 from ../src/nuc/InitParam.h:8,
+                 from ../src/nuc/DeStrip.c:5:
+../src/nuc/../mat/mat.h:50:55: note: expected 'int32_t *' {aka 'int *'} but argument is of type 'volatile int32_t *' {aka 'volatile int *'}
+   50 | mat_s32 *createMat_s32_A(int rows, int cols, int32_t *data);
+      |                                              ~~~~~~~~~^~~~
+../src/nuc/DeStrip.c:206:9: warning: unused variable 'Strip_kSize' [-Wunused-variable]
+  206 |     int Strip_kSize = *((int *) value);
+      |         ^~~~~~~~~~~
+'Finished building: ../src/nuc/DeStrip.c'
+' '
+'Building file: ../src/nuc/IRNUC.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/nuc/IRNUC.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/nuc/IRNUC.d" -MT"src/nuc/IRNUC.o" -o "src/nuc/IRNUC.o" "../src/nuc/IRNUC.c"
+../src/nuc/IRNUC.c: In function 'infrared_NUC':
+../src/nuc/IRNUC.c:55:15: warning: too many arguments for format [-Wformat-extra-args]
+   55 |        printf("cpu0 read image update weight\n", n);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nuc/IRNUC.c:32:21: warning: unused variable 'MAX' [-Wunused-variable]
+   32 |     double MIN = 0, MAX = 65535;   // 2^16-1
+      |                     ^~~
+../src/nuc/IRNUC.c:32:12: warning: unused variable 'MIN' [-Wunused-variable]
+   32 |     double MIN = 0, MAX = 65535;   // 2^16-1
+      |            ^~~
+../src/nuc/IRNUC.c:30:9: warning: unused variable 'time_r' [-Wunused-variable]
+   30 |     u32 time_r,SSN_time = 0;
+      |         ^~~~~~
+'Finished building: ../src/nuc/IRNUC.c'
+' '
+'Building file: ../src/nuc/InitParam.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/nuc/InitParam.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/nuc/InitParam.d" -MT"src/nuc/InitParam.o" -o "src/nuc/InitParam.o" "../src/nuc/InitParam.c"
+'Finished building: ../src/nuc/InitParam.c'
+' '
+'Building file: ../src/nuc/SSN.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/nuc/SSN.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/nuc/SSN.d" -MT"src/nuc/SSN.o" -o "src/nuc/SSN.o" "../src/nuc/SSN.c"
+../src/nuc/SSN.c: In function 'updateWeight':
+../src/nuc/SSN.c:29:5: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+   29 |     while(get_weight() == 1);//缁涘绶熸稉濠佺濞嗏剝娼堥柌宥堫潶鐠囪褰�?
+      |     ^~~~~
+../src/nuc/SSN.c:30:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+   30 |  write_weight(dst);//閸愭瑥鍙嗛弬鎵畱閺夊啴鍣�
+      |  ^~~~~~~~~~~~
+../src/nuc/SSN.c: In function 'SSN':
+../src/nuc/SSN.c:78:20: warning: unused variable 'start_time' [-Wunused-variable]
+   78 |     struct timeval start_time;
+      |                    ^~~~~~~~~~
+../src/nuc/SSN.c:77:20: warning: unused variable 'end_time' [-Wunused-variable]
+   77 |     struct timeval end_time;
+      |                    ^~~~~~~~
+'Finished building: ../src/nuc/SSN.c'
+' '
+'Building file: ../src/nuc/file_op.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/nuc/file_op.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/nuc/file_op.d" -MT"src/nuc/file_op.o" -o "src/nuc/file_op.o" "../src/nuc/file_op.c"
+../src/nuc/file_op.c: In function 'Init':
+../src/nuc/file_op.c:21:9: warning: unused variable 'status' [-Wunused-variable]
+   21 |     int status;
+      |         ^~~~~~
+../src/nuc/file_op.c: In function 'Write':
+../src/nuc/file_op.c:53:28: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   53 |     result = f_write(&file,(void*) src_addr,byte_len,&BytesWr);//闂備礁鎲￠崝鏍偡閿曞�?�鍑犻柛鎰ㄦ櫇椤╃兘鎮归崫鍕儓闁轰礁鐖奸幃妤呮儌閸涘﹤顏�
+      |                            ^
+../src/nuc/file_op.c: In function 'Read':
+../src/nuc/file_op.c:83:28: warning: passing argument 2 of 'f_lseek' makes integer from pointer without a cast [-Wint-conversion]
+   83 |     result = f_lseek(&file,start_addr);    //闂備胶鍎甸弲婵嬧�﹂崼銏㈢閻庯綆鍋嗛�?�鏌ュ箹鏉堝墽纾挎繛鍫濇惈椤顦村┑顔炬暬閹儵鏁愭径濠勫摋闂佽鍨庨崟顔兼儓闂備礁鎼崐绋棵洪敐鍛瀻闁靛繈鍊栭崕宥夋煕閺囥劌澧伴柛妯荤懃閳藉骞欓崘褏鐩庣紓浣介哺閸ㄥ爼骞堥妸褝鎷烽敐鍌涙珖缂佸顕槐鎾诲礃閹勭亖闂佽法鍠愰弸濠氬箯閿燂拷
+      |                            ^~~~~~~~~~
+      |                            |
+      |                            void *
+In file included from ../src/nuc/file_op.h:9,
+                 from ../src/nuc/file_op.c:9:
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/ff.h:277:35: note: expected 'FSIZE_t' {aka 'long unsigned int'} but argument is of type 'void *'
+  277 | FRESULT f_lseek (FIL* fp, FSIZE_t ofs);        /* Move file pointer of the file object */
+      |                           ~~~~~~~~^~~
+'Finished building: ../src/nuc/file_op.c'
+' '
+'Building file: ../src/nuc/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/nuc/main.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/nuc/main.d" -MT"src/nuc/main.o" -o "src/nuc/main.o" "../src/nuc/main.c"
+'Finished building: ../src/nuc/main.c'
+' '
+'Building file: ../src/nuc/shareOp.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/nuc/shareOp.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/nuc/shareOp.d" -MT"src/nuc/shareOp.o" -o "src/nuc/shareOp.o" "../src/nuc/shareOp.c"
+../src/nuc/shareOp.c: In function 'read_share_data':
+../src/nuc/shareOp.c:6:38: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+    6 |   shareData->data[i] = Xil_In32(addr + i);
+      |                                 ~~~~~^~~
+      |                                      |
+      |                                      int *
+In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xscugic.h:189,
+                 from ../src/nuc/shareOpConfig.h:8,
+                 from ../src/nuc/shareOp.c:1:
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xil_io.h:134:36: note: expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'
+  134 | static INLINE u32 Xil_In32(UINTPTR Addr)
+      |                            ~~~~~~~~^~~~
+../src/nuc/shareOp.c:8:12: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+    8 |  Xil_Out32(flag, 0);
+      |            ^~~~
+      |            |
+      |            int *
+In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xscugic.h:189,
+                 from ../src/nuc/shareOpConfig.h:8,
+                 from ../src/nuc/shareOp.c:1:
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'
+  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+      |                              ~~~~~~~~^~~~
+../src/nuc/shareOp.c: In function 'write_share_data':
+../src/nuc/shareOp.c:14:18: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+   14 |   Xil_Out32(addr + i, shareData->data[i]);
+      |             ~~~~~^~~
+      |                  |
+      |                  int *
+In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xscugic.h:189,
+                 from ../src/nuc/shareOpConfig.h:8,
+                 from ../src/nuc/shareOp.c:1:
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'
+  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+      |                              ~~~~~~~~^~~~
+../src/nuc/shareOp.c:16:12: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+   16 |  Xil_Out32(flag, 1);
+      |            ^~~~
+      |            |
+      |            int *
+In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xscugic.h:189,
+                 from ../src/nuc/shareOpConfig.h:8,
+                 from ../src/nuc/shareOp.c:1:
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'
+  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+      |                              ~~~~~~~~^~~~
+In file included from ../src/nuc/shareOp.c:1:
+../src/nuc/shareOp.c: In function 'read_weight':
+../src/nuc/shareOpConfig.h:20:25: warning: passing argument 2 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]
+   20 | #define SHARE_BASE_ADDR 0x70000000
+      |                         ^
+      |                         |
+      |                         int
+../src/nuc/shareOpConfig.h:29:27: note: in expansion of macro 'SHARE_BASE_ADDR'
+   29 | #define WEIGHT_BASE       SHARE_BASE_ADDR + (640 * 512 * 4 + 0x20)
+      |                           ^~~~~~~~~~~~~~~
+../src/nuc/shareOp.c:20:30: note: in expansion of macro 'WEIGHT_BASE'
+   20 |  read_share_data(weight_s32, WEIGHT_BASE, WEIGHT_FLAG_BASE);
+      |                              ^~~~~~~~~~~
+../src/nuc/shareOp.c:3:47: note: expected 'int *' but argument is of type 'int'
+    3 | void read_share_data(mat_s32 *shareData, int *addr, int *flag){
+      |                                          ~~~~~^~~~
+In file included from ../src/nuc/shareOp.c:1:
+../src/nuc/shareOpConfig.h:20:25: warning: passing argument 3 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]
+   20 | #define SHARE_BASE_ADDR 0x70000000
+      |                         ^
+      |                         |
+      |                         int
+../src/nuc/shareOpConfig.h:25:28: note: in expansion of macro 'SHARE_BASE_ADDR'
+   25 | #define WEIGHT_FLAG_BASE   SHARE_BASE_ADDR + 0xc
+      |                            ^~~~~~~~~~~~~~~
+../src/nuc/shareOp.c:20:43: note: in expansion of macro 'WEIGHT_FLAG_BASE'
+   20 |  read_share_data(weight_s32, WEIGHT_BASE, WEIGHT_FLAG_BASE);
+      |                                           ^~~~~~~~~~~~~~~~
+../src/nuc/shareOp.c:3:58: note: expected 'int *' but argument is of type 'int'
+    3 | void read_share_data(mat_s32 *shareData, int *addr, int *flag){
+      |                                                     ~~~~~^~~~
+In file included from ../src/nuc/shareOp.c:1:
+../src/nuc/shareOp.c: In function 'write_weight':
+../src/nuc/shareOpConfig.h:20:25: warning: passing argument 2 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]
+   20 | #define SHARE_BASE_ADDR 0x70000000
+      |                         ^
+      |                         |
+      |                         int
+../src/nuc/shareOpConfig.h:29:27: note: in expansion of macro 'SHARE_BASE_ADDR'
+   29 | #define WEIGHT_BASE       SHARE_BASE_ADDR + (640 * 512 * 4 + 0x20)
+      |                           ^~~~~~~~~~~~~~~
+../src/nuc/shareOp.c:24:31: note: in expansion of macro 'WEIGHT_BASE'
+   24 |  write_share_data(weight_s32, WEIGHT_BASE, WEIGHT_FLAG_BASE);
+      |                               ^~~~~~~~~~~
+../src/nuc/shareOp.c:11:48: note: expected 'int *' but argument is of type 'int'
+   11 | void write_share_data(mat_s32 *shareData, int *addr, int *flag){
+      |                                           ~~~~~^~~~
+In file included from ../src/nuc/shareOp.c:1:
+../src/nuc/shareOpConfig.h:20:25: warning: passing argument 3 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]
+   20 | #define SHARE_BASE_ADDR 0x70000000
+      |                         ^
+      |                         |
+      |                         int
+../src/nuc/shareOpConfig.h:25:28: note: in expansion of macro 'SHARE_BASE_ADDR'
+   25 | #define WEIGHT_FLAG_BASE   SHARE_BASE_ADDR + 0xc
+      |                            ^~~~~~~~~~~~~~~
+../src/nuc/shareOp.c:24:44: note: in expansion of macro 'WEIGHT_FLAG_BASE'
+   24 |  write_share_data(weight_s32, WEIGHT_BASE, WEIGHT_FLAG_BASE);
+      |                                            ^~~~~~~~~~~~~~~~
+../src/nuc/shareOp.c:11:59: note: expected 'int *' but argument is of type 'int'
+   11 | void write_share_data(mat_s32 *shareData, int *addr, int *flag){
+      |                                                      ~~~~~^~~~
+In file included from ../src/nuc/shareOp.c:1:
+../src/nuc/shareOp.c: In function 'read_nuc':
+../src/nuc/shareOpConfig.h:20:25: warning: passing argument 2 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]
+   20 | #define SHARE_BASE_ADDR 0x70000000
+      |                         ^
+      |                         |
+      |                         int
+../src/nuc/shareOpConfig.h:28:26: note: in expansion of macro 'SHARE_BASE_ADDR'
+   28 | #define NUC_BASE         SHARE_BASE_ADDR + 0x20
+      |                          ^~~~~~~~~~~~~~~
+../src/nuc/shareOp.c:28:27: note: in expansion of macro 'NUC_BASE'
+   28 |  read_share_data(nuc_s32, NUC_BASE, IMAGE_FLAG_BASE);
+      |                           ^~~~~~~~
+../src/nuc/shareOp.c:3:47: note: expected 'int *' but argument is of type 'int'
+    3 | void read_share_data(mat_s32 *shareData, int *addr, int *flag){
+      |                                          ~~~~~^~~~
+In file included from ../src/nuc/shareOp.c:1:
+../src/nuc/shareOpConfig.h:20:25: warning: passing argument 3 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]
+   20 | #define SHARE_BASE_ADDR 0x70000000
+      |                         ^
+      |                         |
+      |                         int
+../src/nuc/shareOpConfig.h:24:27: note: in expansion of macro 'SHARE_BASE_ADDR'
+   24 | #define IMAGE_FLAG_BASE   SHARE_BASE_ADDR + 0x8
+      |                           ^~~~~~~~~~~~~~~
+../src/nuc/shareOp.c:28:37: note: in expansion of macro 'IMAGE_FLAG_BASE'
+   28 |  read_share_data(nuc_s32, NUC_BASE, IMAGE_FLAG_BASE);
+      |                                     ^~~~~~~~~~~~~~~
+../src/nuc/shareOp.c:3:58: note: expected 'int *' but argument is of type 'int'
+    3 | void read_share_data(mat_s32 *shareData, int *addr, int *flag){
+      |                                                     ~~~~~^~~~
+In file included from ../src/nuc/shareOp.c:1:
+../src/nuc/shareOp.c: In function 'write_nuc':
+../src/nuc/shareOpConfig.h:20:25: warning: passing argument 2 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]
+   20 | #define SHARE_BASE_ADDR 0x70000000
+      |                         ^
+      |                         |
+      |                         int
+../src/nuc/shareOpConfig.h:28:26: note: in expansion of macro 'SHARE_BASE_ADDR'
+   28 | #define NUC_BASE         SHARE_BASE_ADDR + 0x20
+      |                          ^~~~~~~~~~~~~~~
+../src/nuc/shareOp.c:32:28: note: in expansion of macro 'NUC_BASE'
+   32 |  write_share_data(nuc_s32, NUC_BASE, IMAGE_FLAG_BASE);
+      |                            ^~~~~~~~
+../src/nuc/shareOp.c:11:48: note: expected 'int *' but argument is of type 'int'
+   11 | void write_share_data(mat_s32 *shareData, int *addr, int *flag){
+      |                                           ~~~~~^~~~
+In file included from ../src/nuc/shareOp.c:1:
+../src/nuc/shareOpConfig.h:20:25: warning: passing argument 3 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]
+   20 | #define SHARE_BASE_ADDR 0x70000000
+      |                         ^
+      |                         |
+      |                         int
+../src/nuc/shareOpConfig.h:24:27: note: in expansion of macro 'SHARE_BASE_ADDR'
+   24 | #define IMAGE_FLAG_BASE   SHARE_BASE_ADDR + 0x8
+      |                           ^~~~~~~~~~~~~~~
+../src/nuc/shareOp.c:32:38: note: in expansion of macro 'IMAGE_FLAG_BASE'
+   32 |  write_share_data(nuc_s32, NUC_BASE, IMAGE_FLAG_BASE);
+      |                                      ^~~~~~~~~~~~~~~
+../src/nuc/shareOp.c:11:59: note: expected 'int *' but argument is of type 'int'
+   11 | void write_share_data(mat_s32 *shareData, int *addr, int *flag){
+      |                                                      ~~~~~^~~~
+../src/nuc/shareOp.c: In function 'init_share_addr':
+../src/nuc/shareOp.c:37:2: warning: implicit declaration of function 'Xil_SetTlbAttributes' [-Wimplicit-function-declaration]
+   37 |  Xil_SetTlbAttributes(SHARE_BASE_ADDR, 0x14de2);  //绂佺�? 0xfffffff0 鐨� Cache 灞炴��
+      |  ^~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/nuc/shareOp.c'
+' '
+'Building file: ../src/nuc/utils.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/nuc/utils.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/nuc/utils.d" -MT"src/nuc/utils.o" -o "src/nuc/utils.o" "../src/nuc/utils.c"
+In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xil_io.h:50,
+                 from ../src/nuc/file_op.h:11,
+                 from ../src/nuc/utils.c:9:
+../src/nuc/utils.c: In function 'writeRes_RAW':
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   43 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/nuc/utils.c:118:10: note: in expansion of macro 'XST_FAILURE'
+  118 |   return XST_FAILURE;
+      |          ^~~~~~~~~~~
+../src/nuc/utils.c:98:6: note: declared here
+   98 | void writeRes_RAW(mat_s32 *NUC, int cnt, char *res_path) {
+      |      ^~~~~~~~~~~~
+In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xil_io.h:50,
+                 from ../src/nuc/file_op.h:11,
+                 from ../src/nuc/utils.c:9:
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   43 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/nuc/utils.c:125:10: note: in expansion of macro 'XST_FAILURE'
+  125 |   return XST_FAILURE;
+      |          ^~~~~~~~~~~
+../src/nuc/utils.c:98:6: note: declared here
+   98 | void writeRes_RAW(mat_s32 *NUC, int cnt, char *res_path) {
+      |      ^~~~~~~~~~~~
+In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xil_io.h:50,
+                 from ../src/nuc/file_op.h:11,
+                 from ../src/nuc/utils.c:9:
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   43 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/nuc/utils.c:137:11: note: in expansion of macro 'XST_FAILURE'
+  137 |    return XST_FAILURE;
+      |           ^~~~~~~~~~~
+../src/nuc/utils.c:98:6: note: declared here
+   98 | void writeRes_RAW(mat_s32 *NUC, int cnt, char *res_path) {
+      |      ^~~~~~~~~~~~
+In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xil_io.h:50,
+                 from ../src/nuc/file_op.h:11,
+                 from ../src/nuc/utils.c:9:
+D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   43 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/nuc/utils.c:146:10: note: in expansion of macro 'XST_FAILURE'
+  146 |   return XST_FAILURE;
+      |          ^~~~~~~~~~~
+../src/nuc/utils.c:98:6: note: declared here
+   98 | void writeRes_RAW(mat_s32 *NUC, int cnt, char *res_path) {
+      |      ^~~~~~~~~~~~
+'Finished building: ../src/nuc/utils.c'
+' '
+'Building file: ../src/mat/mat.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/mat/mat.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/mat/mat.d" -MT"src/mat/mat.o" -o "src/mat/mat.o" "../src/mat/mat.c"
+'Finished building: ../src/mat/mat.c'
+' '
+'Building file: ../src/mat/matCalGaussian_f32.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/mat/matCalGaussian_f32.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/mat/matCalGaussian_f32.d" -MT"src/mat/matCalGaussian_f32.o" -o "src/mat/matCalGaussian_f32.o" "../src/mat/matCalGaussian_f32.c"
+'Finished building: ../src/mat/matCalGaussian_f32.c'
+' '
+'Building file: ../src/mat/matCalGaussian_s32.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/mat/matCalGaussian_s32.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/mat/matCalGaussian_s32.d" -MT"src/mat/matCalGaussian_s32.o" -o "src/mat/matCalGaussian_s32.o" "../src/mat/matCalGaussian_s32.c"
+'Finished building: ../src/mat/matCalGaussian_s32.c'
+' '
+'Building file: ../src/mat/matCalGaussian_s64.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/mat/matCalGaussian_s64.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/mat/matCalGaussian_s64.d" -MT"src/mat/matCalGaussian_s64.o" -o "src/mat/matCalGaussian_s64.o" "../src/mat/matCalGaussian_s64.c"
+'Finished building: ../src/mat/matCalGaussian_s64.c'
+' '
+'Building file: ../src/mat/matCalHist.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/mat/matCalHist.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/mat/matCalHist.d" -MT"src/mat/matCalHist.o" -o "src/mat/matCalHist.o" "../src/mat/matCalHist.c"
+'Finished building: ../src/mat/matCalHist.c'
+' '
+'Building file: ../src/mat/matCalMedCover.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/mat/matCalMedCover.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/mat/matCalMedCover.d" -MT"src/mat/matCalMedCover.o" -o "src/mat/matCalMedCover.o" "../src/mat/matCalMedCover.c"
+'Finished building: ../src/mat/matCalMedCover.c'
+' '
+'Building file: ../src/mat/matCal_s32.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/mat/matCal_s32.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/mat/matCal_s32.d" -MT"src/mat/matCal_s32.o" -o "src/mat/matCal_s32.o" "../src/mat/matCal_s32.c"
+'Finished building: ../src/mat/matCal_s32.c'
+' '
+'Building file: ../src/mat/matCal_s64.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/mat/matCal_s64.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/mat/matCal_s64.d" -MT"src/mat/matCal_s64.o" -o "src/mat/matCal_s64.o" "../src/mat/matCal_s64.c"
+'Finished building: ../src/mat/matCal_s64.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/platform.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: camerlink_update.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bsplib/lib -o "camerlink_update.elf"  ./src/xdm/dma.o ./src/xdm/dma_DeNU_2.o  ./src/nuc/DeFPN.o ./src/nuc/DeNU_2.o ./src/nuc/DeNoise.o ./src/nuc/DeShading.o ./src/nuc/DeStrip.o ./src/nuc/IRNUC.o ./src/nuc/InitParam.o ./src/nuc/SSN.o ./src/nuc/file_op.o ./src/nuc/main.o ./src/nuc/shareOp.o ./src/nuc/utils.o  ./src/mat/mat.o ./src/mat/matCalGaussian_f32.o ./src/mat/matCalGaussian_s32.o ./src/mat/matCalGaussian_s64.o ./src/mat/matCalHist.o ./src/mat/matCalMedCover.o ./src/mat/matCal_s32.o ./src/mat/matCal_s64.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: camerlink_update.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size camerlink_update.elf  |tee "camerlink_update.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 243592	   4836	446710376	446958804	1aa40cd4	camerlink_update.elf
+'Finished building: camerlink_update.elf.size'
+' '
+
+21:02:43 Build Finished (took 6s.429ms)
+
