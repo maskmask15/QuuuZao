@@ -1,12 +1,12 @@
 # dir 不需要提交的目录
-.git
-.metadata
-.vscode
-cameralink_udp_system
-lwip_modi_3
-RemoteSystemsTempFiles
-single_udp_test
-single_udp_test_system
+.git/
+.metadata/
+.vscode/
+cameralink_udp_system/
+lwip_modi_3/
+RemoteSystemsTempFiles/
+single_udp_test/
+single_udp_test_system/
 
 # file 不需要提交的文件
 .analytics
