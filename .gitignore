@@ -1,20 +1,4 @@
-# dir 不需要提交的目录
-.git
-.metadata
-.vscode
-cameralink_udp_system
-lwip_modi_3
-RemoteSystemsTempFiles
-single_udp_test
-single_udp_test_system
 
-# file 不需要提交的文件
-.analytics
-
-
-# log 不需要提交的任意包含后缀名为log的文件
-*.log
-*.temp
-
-# Package Files 不需要提交的任意包含后缀名为jar的文件
-*.jar
+*
+!cameralink_udp/src/*
+!camerlink_update/src/*
