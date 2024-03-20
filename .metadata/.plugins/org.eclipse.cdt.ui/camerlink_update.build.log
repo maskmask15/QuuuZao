@@ -1,0 +1,7 @@
+17:05:40 **** Clean-only build of configuration Debug for project camerlink_update ****
+make clean 
+rm -rf  ./src/xdm/dma.o ./src/xdm/dma_DeNU_2.o  ./src/nuc/DeFPN.o ./src/nuc/DeNU_2.o ./src/nuc/DeNoise.o ./src/nuc/DeShading.o ./src/nuc/DeStrip.o ./src/nuc/IRNUC.o ./src/nuc/InitParam.o ./src/nuc/SSN.o ./src/nuc/file_op.o ./src/nuc/main.o ./src/nuc/shareOp.o ./src/nuc/utils.o  ./src/mat/mat.o ./src/mat/matCalGaussian_f32.o ./src/mat/matCalGaussian_s32.o ./src/mat/matCalGaussian_s64.o ./src/mat/matCalHist.o ./src/mat/matCalMedCover.o ./src/mat/matCal_s32.o ./src/mat/matCal_s64.o  ./src/helloworld.o ./src/platform.o  ./src/xdm/dma.d ./src/xdm/dma_DeNU_2.d  ./src/nuc/DeFPN.d ./src/nuc/DeNU_2.d ./src/nuc/DeNoise.d ./src/nuc/DeShading.d ./src/nuc/DeStrip.d ./src/nuc/IRNUC.d ./src/nuc/InitParam.d ./src/nuc/SSN.d ./src/nuc/file_op.d ./src/nuc/main.d ./src/nuc/shareOp.d ./src/nuc/utils.d  ./src/mat/mat.d ./src/mat/matCalGaussian_f32.d ./src/mat/matCalGaussian_s32.d ./src/mat/matCalGaussian_s64.d ./src/mat/matCalHist.d ./src/mat/matCalMedCover.d ./src/mat/matCal_s32.d ./src/mat/matCal_s64.d  ./src/helloworld.d ./src/platform.d  camerlink_update.elf.size  camerlink_update.elf
+' '
+
+17:05:40 Build Finished (took 194ms)
+

@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_cameralink_udp-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_cameralink_udp-Default_1,org.eclipse.launchbar.core.descriptorType.default\:Debugger_cameralink_udp-Default_2,org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_cameralink_udp_system_1,org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_cameralink_udp_system
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_cameralink_udp-Default/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_cameralink_udp-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_cameralink_udp_system/activeLaunchMode=systemrun
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_cameralink_udp_system/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

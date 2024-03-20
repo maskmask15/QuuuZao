@@ -1,0 +1,7 @@
+2024-03-20T17:05:40.111360700255-17:05:40 **** Clean-only build of configuration Debug for project cameralink_udp ****
+000-make clean 
+000-rm -rf  ./src/xdm/dma.o  ./src/nuc/IRNUC.o ./src/nuc/InitParam.o ./src/nuc/SSN.o ./src/nuc/file_op.o ./src/nuc/main.o ./src/nuc/shareOp.o ./src/nuc/utils.o  ./src/mat/mat.o ./src/mat/matCalGaussian_f32.o ./src/mat/matCalGaussian_s32.o ./src/mat/matCalGaussian_s64.o ./src/mat/matCalHist.o ./src/mat/matCalMedCover.o ./src/mat/matCal_s32.o ./src/mat/matCal_s64.o  ./src/debug.o ./src/display_demo.o ./src/echo.o ./src/lwip_app.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/udp_init.o ./src/vdma.o ./src/zynq_interrupt.o  ./src/xdm/dma.d  ./src/nuc/IRNUC.d ./src/nuc/InitParam.d ./src/nuc/SSN.d ./src/nuc/file_op.d ./src/nuc/main.d ./src/nuc/shareOp.d ./src/nuc/utils.d  ./src/mat/mat.d ./src/mat/matCalGaussian_f32.d ./src/mat/matCalGaussian_s32.d ./src/mat/matCalGaussian_s64.d ./src/mat/matCalHist.d ./src/mat/matCalMedCover.d ./src/mat/matCal_s32.d ./src/mat/matCal_s64.d  ./src/debug.d ./src/display_demo.d ./src/echo.d ./src/lwip_app.d ./src/platform_zynq.d ./src/platform_zynqmp.d ./src/udp_init.d ./src/vdma.d ./src/zynq_interrupt.d  cameralink_udp.elf.size  cameralink_udp.elf
+000-' '
+00255-
+17:05:40 Build Finished (took 185ms)
+

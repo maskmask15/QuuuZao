@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+    	
+    <storageModule moduleId="org.eclipse.cdt.core.settings">
+        		
+        <cconfiguration id="xilinx.gnu.arm.a53.exe.debug.768225944">
+            			
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="xilinx.gnu.arm.a53.exe.debug.768225944" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+                				
+                <externalSettings/>
+                				
+                <extensions>
+                    					
+                    <extension id="com.xilinx.sdk.managedbuilder.XELF.arm.a53" point="org.eclipse.cdt.core.BinaryParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    				
+                </extensions>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                				
+                <configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="xilinx.gnu.arm.a53.exe.debug.768225944" name="Debug" parent="xilinx.gnu.arm.a53.exe.debug">
+                    					
+                    <folderInfo id="xilinx.gnu.arm.a53.exe.debug.768225944." name="/" resourcePath="">
+                        						
+                        <toolChain id="xilinx.gnu.arm.a53.exe.debug.toolchain.1537715623" name="Xilinx ARM v8 GNU Toolchain" superClass="xilinx.gnu.arm.a53.exe.debug.toolchain">
+                            							
+                            <targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.arm.a53" id="xilinx.arm.a53.target.gnu.base.debug.1383983700" isAbstract="false" name="Debug Platform" superClass="xilinx.arm.a53.target.gnu.base.debug"/>
+                            							
+                            <builder buildPath="${workspace_loc:/cameralink_udp}/Debug" enableAutoBuild="true" id="xilinx.gnu.arm.a53.toolchain.builder.debug.1166025920" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU make" superClass="xilinx.gnu.arm.a53.toolchain.builder.debug"/>
+                            							
+                            <tool id="xilinx.gnu.arm.a53.c.toolchain.assembler.debug.1656239964" name="ARM v8 gcc assembler" superClass="xilinx.gnu.arm.a53.c.toolchain.assembler.debug">
+                                								
+                                <inputType id="xilinx.gnu.assembler.input.755835924" superClass="xilinx.gnu.assembler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="xilinx.gnu.arm.a53.c.toolchain.compiler.debug.881248564" name="ARM v8 gcc compiler" superClass="xilinx.gnu.arm.a53.c.toolchain.compiler.debug">
+                                								
+                                <option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.1460224402" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.c.optimization.level.optimize" valueType="enumerated"/>
+                                								
+                                <option id="xilinx.gnu.compiler.option.debugging.level.1310773439" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+                                								
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.479781917" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=cameralink_udp,fileType=bspInclude}"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.flags.282545470" name="Software Platform Inferred Flags" superClass="xilinx.gnu.compiler.inferred.swplatform.flags" value="  " valueType="string"/>
+                                								
+                                <inputType id="xilinx.gnu.arm.a53.c.compiler.input.134691495" name="C source files" superClass="xilinx.gnu.arm.a53.c.compiler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="xilinx.gnu.arm.a53.cxx.toolchain.compiler.debug.642495748" name="ARM v8 g++ compiler" superClass="xilinx.gnu.arm.a53.cxx.toolchain.compiler.debug">
+                                								
+                                <option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.4661825" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+                                								
+                                <option id="xilinx.gnu.compiler.option.debugging.level.629789224" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+                                								
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.666210816" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=cameralink_udp,fileType=bspInclude}"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.flags.1395669722" name="Software Platform Inferred Flags" superClass="xilinx.gnu.compiler.inferred.swplatform.flags" value="  " valueType="string"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="xilinx.gnu.arm.a53.toolchain.archiver.593331555" name="ARM v8 archiver" superClass="xilinx.gnu.arm.a53.toolchain.archiver"/>
+                            							
+                            <tool id="xilinx.gnu.arm.a53.c.toolchain.linker.debug.2111051007" name="ARM v8 gcc linker" superClass="xilinx.gnu.arm.a53.c.toolchain.linker.debug">
+                                								
+                                <option id="xilinx.gnu.linker.inferred.swplatform.lpath.2011095333" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=cameralink_udp,fileType=bspLib}"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.linker.inferred.swplatform.flags.1113879316" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,--end-group"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.c.linker.option.lscript.1438970774" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
+                                								
+                                <option id="xilinx.gnu.c.link.option.libs.838990221" name="Libraries (-l)" superClass="xilinx.gnu.c.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="m"/>
+                                    								
+                                </option>
+                                								
+                                <inputType id="xilinx.gnu.linker.input.1856522028" superClass="xilinx.gnu.linker.input">
+                                    									
+                                    <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                                    									
+                                    <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                                    								
+                                </inputType>
+                                								
+                                <inputType id="xilinx.gnu.linker.input.lscript.252335955" name="Linker Script" superClass="xilinx.gnu.linker.input.lscript"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="xilinx.gnu.arm.a53.cxx.toolchain.linker.debug.473518079" name="ARM v8 g++ linker" superClass="xilinx.gnu.arm.a53.cxx.toolchain.linker.debug">
+                                								
+                                <option id="xilinx.gnu.linker.inferred.swplatform.lpath.808964845" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=cameralink_udp,fileType=bspLib}"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.linker.inferred.swplatform.flags.310239795" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,--end-group"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.c.linker.option.lscript.2052209536" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="xilinx.gnu.arm.a53.size.debug.2131741975" name="ARM v8 Print Size" superClass="xilinx.gnu.arm.a53.size.debug"/>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    					
+                    <sourceEntries>
+                        						
+                        <entry excluding="_ide" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        					
+                    </sourceEntries>
+                    				
+                </configuration>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+            		
+        </cconfiguration>
+        		
+        <cconfiguration id="xilinx.gnu.arm.a53.exe.release.990675995">
+            			
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="xilinx.gnu.arm.a53.exe.release.990675995" moduleId="org.eclipse.cdt.core.settings" name="Release">
+                				
+                <externalSettings/>
+                				
+                <extensions>
+                    					
+                    <extension id="com.xilinx.sdk.managedbuilder.XELF.arm.a53" point="org.eclipse.cdt.core.BinaryParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    				
+                </extensions>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                				
+                <configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="xilinx.gnu.arm.a53.exe.release.990675995" name="Release" parent="xilinx.gnu.arm.a53.exe.release">
+                    					
+                    <folderInfo id="xilinx.gnu.arm.a53.exe.release.990675995." name="/" resourcePath="">
+                        						
+                        <toolChain id="xilinx.gnu.arm.a53.exe.release.toolchain.932231685" name="Xilinx ARM v8 GNU Toolchain" superClass="xilinx.gnu.arm.a53.exe.release.toolchain">
+                            							
+                            <targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.arm.a53" id="xilinx.arm.a53.target.gnu.base.release.728043570" isAbstract="false" name="Release Platform" superClass="xilinx.arm.a53.target.gnu.base.release"/>
+                            							
+                            <builder buildPath="${workspace_loc:/cameralink_udp}/Release" enableAutoBuild="true" id="xilinx.gnu.arm.a53.toolchain.builder.release.985468479" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU make" superClass="xilinx.gnu.arm.a53.toolchain.builder.release"/>
+                            							
+                            <tool id="xilinx.gnu.arm.a53.c.toolchain.assembler.release.1504972340" name="ARM v8 gcc assembler" superClass="xilinx.gnu.arm.a53.c.toolchain.assembler.release">
+                                								
+                                <inputType id="xilinx.gnu.assembler.input.1539477972" superClass="xilinx.gnu.assembler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="xilinx.gnu.arm.a53.c.toolchain.compiler.release.1021052402" name="ARM v8 gcc compiler" superClass="xilinx.gnu.arm.a53.c.toolchain.compiler.release">
+                                								
+                                <option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.1433386887" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+                                								
+                                <option id="xilinx.gnu.compiler.option.debugging.level.1633832977" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+                                								
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.364186083" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=cameralink_udp,fileType=bspInclude}"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.flags.250279527" name="Software Platform Inferred Flags" superClass="xilinx.gnu.compiler.inferred.swplatform.flags" value="  " valueType="string"/>
+                                								
+                                <inputType id="xilinx.gnu.arm.a53.c.compiler.input.1270512454" name="C source files" superClass="xilinx.gnu.arm.a53.c.compiler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="xilinx.gnu.arm.a53.cxx.toolchain.compiler.release.881089655" name="ARM v8 g++ compiler" superClass="xilinx.gnu.arm.a53.cxx.toolchain.compiler.release">
+                                								
+                                <option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.669991245" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+                                								
+                                <option id="xilinx.gnu.compiler.option.debugging.level.493571709" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+                                								
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.200636081" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=cameralink_udp,fileType=bspInclude}"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.flags.220774226" name="Software Platform Inferred Flags" superClass="xilinx.gnu.compiler.inferred.swplatform.flags" value="  " valueType="string"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="xilinx.gnu.arm.a53.toolchain.archiver.248866474" name="ARM v8 archiver" superClass="xilinx.gnu.arm.a53.toolchain.archiver"/>
+                            							
+                            <tool id="xilinx.gnu.arm.a53.c.toolchain.linker.release.1330487743" name="ARM v8 gcc linker" superClass="xilinx.gnu.arm.a53.c.toolchain.linker.release">
+                                								
+                                <option id="xilinx.gnu.linker.inferred.swplatform.lpath.1364974124" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=cameralink_udp,fileType=bspLib}"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.linker.inferred.swplatform.flags.2107487246" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,--end-group"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.c.linker.option.lscript.1337530994" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
+                                								
+                                <option id="xilinx.gnu.c.link.option.libs.1725488546" superClass="xilinx.gnu.c.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="-m"/>
+                                    								
+                                </option>
+                                								
+                                <inputType id="xilinx.gnu.linker.input.355208308" superClass="xilinx.gnu.linker.input">
+                                    									
+                                    <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                                    									
+                                    <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                                    								
+                                </inputType>
+                                								
+                                <inputType id="xilinx.gnu.linker.input.lscript.412406194" name="Linker Script" superClass="xilinx.gnu.linker.input.lscript"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="xilinx.gnu.arm.a53.cxx.toolchain.linker.release.1380081182" name="ARM v8 g++ linker" superClass="xilinx.gnu.arm.a53.cxx.toolchain.linker.release">
+                                								
+                                <option id="xilinx.gnu.linker.inferred.swplatform.lpath.76995094" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=cameralink_udp,fileType=bspLib}"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.linker.inferred.swplatform.flags.195698591" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,--end-group"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.c.linker.option.lscript.1928387868" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="xilinx.gnu.arm.a53.size.release.1487795396" name="ARM v8 Print Size" superClass="xilinx.gnu.arm.a53.size.release"/>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    					
+                    <sourceEntries>
+                        						
+                        <entry excluding="_ide" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        					
+                    </sourceEntries>
+                    				
+                </configuration>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+            		
+        </cconfiguration>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+    	
+    <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        		
+        <project id="cameralink_udp.xilinx.gnu.arm.a53.exe.228250362" name="Xilinx ARM v8 Executable" projectType="xilinx.gnu.arm.a53.exe"/>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="scannerConfiguration">
+        		
+        <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+        		
+        <scannerConfigBuildInfo instanceId="xilinx.gnu.arm.a53.exe.release.990675995;xilinx.gnu.arm.a53.exe.release.990675995.">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.ARMA53GCCManagedMakePerProjectProfileC"/>
+            		
+        </scannerConfigBuildInfo>
+        		
+        <scannerConfigBuildInfo instanceId="xilinx.gnu.arm.a53.exe.debug.768225944;xilinx.gnu.arm.a53.exe.debug.768225944.;xilinx.gnu.arm.a53.c.toolchain.compiler.debug.881248564;xilinx.gnu.arm.a53.c.compiler.input.134691495">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.ARMA53GCCManagedMakePerProjectProfileC"/>
+            		
+        </scannerConfigBuildInfo>
+        		
+        <scannerConfigBuildInfo instanceId="xilinx.gnu.arm.a53.exe.debug.768225944;xilinx.gnu.arm.a53.exe.debug.768225944.">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.ARMA53GCCManagedMakePerProjectProfileC"/>
+            		
+        </scannerConfigBuildInfo>
+        		
+        <scannerConfigBuildInfo instanceId="xilinx.gnu.arm.a53.exe.release.990675995;xilinx.gnu.arm.a53.exe.release.990675995.;xilinx.gnu.arm.a53.c.toolchain.compiler.release.1021052402;xilinx.gnu.arm.a53.c.compiler.input.1270512454">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.ARMA53GCCManagedMakePerProjectProfileC"/>
+            		
+        </scannerConfigBuildInfo>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="refreshScope"/>
+    
+</cproject>
