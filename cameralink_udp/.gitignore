@@ -1,8 +1,8 @@
 # dir 不需要提交的目录
-.settings
-_ide
-Debug
-Release
+.settings/
+_ide/
+Debug/
+Release/
 
 
 # file 不需要提交的文件

@@ -1,7 +1,7 @@
 # dir 不需要提交的目录
-.settings
-_ide
-Debug
+.settings/
+_ide/
+Debug/
 
 # file 不需要提交的文件
 .cproject
