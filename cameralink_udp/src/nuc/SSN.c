@@ -27,6 +27,7 @@ void set_tx_done(){
 //	printf("set tx\n");
 	tx_done = 1;
 }
+
 void set_rx_done(){
 //	printf("set rx\n");
 	rx_done = 1;

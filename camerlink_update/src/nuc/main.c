@@ -35,10 +35,11 @@ int main() {
     //init_share_addr();
     Xil_DCacheFlushRange((UINTPTR)  NUC_BASE, 640 * 512 * 4);
 //    printf("init_share_addr done\n");
-    //��ʼ���ļ�
+    // ��ʼ���ļ�
     Init();
     printf("Init done\n");
-    //��ʼ��DMA
+
+    // ��ʼ��DMA
     DMA_Init(DeNU2_DMA_DEV_ID);
     printf("DeNU2_DMA_DEV_ID done\n");
 
@@ -48,10 +49,7 @@ int main() {
     //��ʼ����־λ
     init_flag();
     printf("init_flag done\n");
-    //����cpu1
-    //StartCpu1();
 
-    //printf("StartCpu1 done\n");
     infrared_NUC(src_H, src_W, dst_H, dst_W, file_fp_path, file_video_path, file_txt_path,
                  FrameRate, NUIntensity, ShadingIntensity, NoiseIntensity);
 

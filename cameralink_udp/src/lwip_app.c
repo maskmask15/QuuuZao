@@ -9,7 +9,7 @@
 #include "sleep.h"
 #include "nuc/file_op.h"
 
-#define packet_size (640 * 4)	// send size
+#define packet_size (640 * 4)	// send size, ËÄÐÐÊý¾Ý
 /* defined by each RAW mode application */
 int net_init(void);
 int sendpic(const char *pic, int piclen, int fn,int sn);
@@ -24,8 +24,8 @@ static int frame_num = 0;
 int nuc_init();
 uint16_t *infrared_NUC(uint16_t *inputData);
 
+// sd¿¨
 //#define SD_FILE
-//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë£ï¿½ï¿½Í»ï¿½ï¿½2000Ö¡ï¿½ï¿½ï¿½ï¿½SDï¿½ï¿½
 
 int lwip_loop()
 {
@@ -44,6 +44,7 @@ int lwip_loop()
 
 			uint16_t *return_Data = infrared_NUC(pFrames[index]);
 
+// Èô¶¨ÒåÁËSD_FILE£¬Ôò»áÍùsd¿¨ÀïÐ´2000Ö¡
 #ifdef SD_FILE
 
 			char file_name[30];
@@ -62,12 +63,12 @@ int lwip_loop()
 
 
 #endif
-			/* Separate camera 1 frame in package */
-			for(int i=0;i<frame_length_curr;i+=packet_size)
+			/******************** ´ÓpackageÖÐ·ÖÀëÒ»Ö¡Êý¾Ý  ********************/
+			for(int i = 0; i < frame_length_curr; i += packet_size)
 			{
-				if((i+packet_size)>frame_length_curr)
+				if((i + packet_size) > frame_length_curr)
 				{
-					cot = frame_length_curr-i;
+					cot = frame_length_curr - i;
 				}
 				else
 				{

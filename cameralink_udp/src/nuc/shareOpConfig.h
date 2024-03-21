@@ -8,14 +8,14 @@
 #include "xscugic.h"
 #include "utils.h"
 
-//IMAGE_FLAG和WEIGHT_FLAG标志为0时可以写，标志为1时可以读，否则不能读写
+// IMAGE_FLAG 和 WEIGHT_FLAG 标志为0时可以写，标志为1时可以读，否则不能读写
 /**
  * 内存划分
- * 名称------起始地址-----长度
- * 共享地址-----0x100000----------0x400000
- * cpu0参数更新 -----0x400000-----0x10000000//256MB
- * cpu1参数更新 -----0x10400000-----0x10000000//256MB
- * FRAME_ADDR_BASE----0x20400000-----0x10000000
+ * 名称------	------------起始地址---------------长度
+ * 共享地址----------------0x100000------------0x400000
+ * cpu0参数更新------------0x400000------------0x10000000//256MB
+ * cpu1参数更新 ------------0x10400000----------0x10000000//256MB
+ * FRAME_ADDR_BASE-------0x20400000----------0x10000000
  */
 #define SHARE_BASE_ADDR 0x70000000
 
@@ -30,14 +30,14 @@
 
 #define DENOISE_BASE_ADDR	INSTRUCTION_BASE_ADDR
 #define INSTRUCTION_BASE_ADDR   0x80100000
-//地址信息
+// 地址信息
 #define DENOISE_OFFSET_N 0x8
 #define DENOISE_OFFSET_MEAN 0xc
 
 #define sev() __asm__("sev")
-#define CPU1STARTADR 0xfffffff0   //存放 CPU1 应用起始地址的地址
-#define CPU1STARTMEM 0x10000000   //CPU1 应用起始地址
-//函数定义
+#define CPU1STARTADR 0xfffffff0   // 存放 CPU1 应用起始地址的地址
+#define CPU1STARTMEM 0x10000000   // CPU1 应用起始地址
+// 函数定义
 void StartCpu1();
 void init_share_addr();
 void write_nuc(mat_s32 *nuc_s32);

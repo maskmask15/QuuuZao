@@ -1,5 +1,4 @@
 #include "main.h"
-
 #define IMG_PATH "fp.raw"
 #define VEDIO_PATH "2nn.raw"
 #define OUTPUT_PATH ""

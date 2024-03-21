@@ -40,7 +40,7 @@ void init_share_addr(){
 	//Xil_SetTlbAttributes(0xFFFF0000, 0x14de2);
 }
 
-//鍚姩cpu1
+// 启动cpu1
 void StartCpu1(void){
     Xil_Out32(CPU1STARTADR, CPU1STARTMEM);  //鍚� CPU1STARTADR(0Xffffffff0)鍦板潃鍐欏叆 CPU1 鐨勮闂唴瀛樺熀鍦板潃
     dmb();    //绛夊緟鍐呭瓨鍐欏叆瀹屾垚(鍚屾)

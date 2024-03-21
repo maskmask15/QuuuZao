@@ -1,8 +1,3 @@
-//
-// Created by ozgaga on 2022/11/2.
-//
-
-//#include <sys/time.h>
 #include <stdio.h>
 #include "IRNUC.h"
 #include "shareOpConfig.h"
@@ -25,7 +20,6 @@ void infrared_NUC(int src_H, int src_W, int res_H, int res_W, char *fp_path, cha
     struct SSN_param ssnParam;
     InitIntensity(FrameRate, NUIntensity, ShadingIntensity, NoiseIntensity, &ssnParam);
 
-    /************** ��ȡ��Ҫ��������Ƶ **************/
     XTime start_time, end_time;
     u32 time_r,SSN_time = 0;
 
@@ -37,20 +31,19 @@ void infrared_NUC(int src_H, int src_W, int res_H, int res_W, char *fp_path, cha
 
     updateWeight(weight_s32);
 
-    /********** ��ȡ��Ƶ֡ *********/
     int mod_cnt1;
     int mod_cnt2;
-    //��Ԥ��������
+    //锟斤拷预锟斤拷锟斤拷锟斤拷锟斤拷
     while (1) {
-        //�����������ͼƬ���²���
+        //锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟酵计拷锟斤拷虏锟斤拷锟�
     	int n = 0;
         while(1){
         	n++;
     		if(get_image() == 1){
-    			//��mod���жϸ�����һ��ģ��
+    			//锟斤拷mod锟斤拷锟叫断革拷锟斤拷锟斤拷一锟斤拷模锟斤拷
     	        mod_cnt1 = get_mod1();
     	        mod_cnt2 = get_mod2();
-    	        //�ӹ���DDR�ж�ȡͼƬ
+    	        //锟接癸拷锟斤拷DDR锟叫讹拷取图片
     			read_nuc(NUC_s32);
     			printf("cpu0 read image update weight\n", n);
     			break;
@@ -58,7 +51,7 @@ void infrared_NUC(int src_H, int src_W, int res_H, int res_W, char *fp_path, cha
     		usleep(1);
         }
 
-        //�������Ȩ��
+        //锟斤拷锟斤拷锟斤拷锟饺拷锟�
         XTime_GetTime(&start_time);
         SSN(NUC_s32, &ssnParam, weight_s32, mod_cnt1, mod_cnt2);
 //        SSN(NUC_s32, &ssnParam, weight_s32, 1, 1);

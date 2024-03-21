@@ -77,13 +77,14 @@ void SSN(mat_s32 *NUC_s32, struct SSN_param *ssnParam, mat_s32 *weight_s32, int 
     struct timeval end_time;
     struct timeval start_time;
 
-    int whenMod1 =1;
-    int whenMod2= 1;
+    int whenMod1 = 1;
+    int whenMod2 = 1;
     printf("SSN: mod1:%d,mod2:%d\n",mod1,mod2);
 
     int ORG_mean = matAvg_s32(NUC_s32);
     matSubS_s32(NUC_s32, ORG_mean, NUC_s32);
 
+    // 更新DeShading参数
     if(mod1 == whenMod1){
         matCopy_s32(NUC_s32, globalNuc.ORG);
         DeShading(&ssnParam->Shading_Scale);
@@ -92,12 +93,15 @@ void SSN(mat_s32 *NUC_s32, struct SSN_param *ssnParam, mat_s32 *weight_s32, int 
     deShading(globalVar.Shading, -globalVar.alphaShading, NUC_s32);
     deShading4(globalVar.Shading4, -globalVar.alphaShading4, NUC_s32);
 
+    // 更新DeFPN参数
     if(mod1 == whenMod1){
         matCopy_s32(NUC_s32, globalNuc.NUC_DeShading);
         DeFPN_s32();
     }
 
     deFP(globalVar.FP, -globalVar.alphaFP, NUC_s32);
+
+    // 更新DeStrip参数
     if(mod1 == whenMod1){
         matCopy_s32(NUC_s32, globalNuc.NUC_DeFPN);
         XTime start_time, end_time;
@@ -112,7 +116,7 @@ void SSN(mat_s32 *NUC_s32, struct SSN_param *ssnParam, mat_s32 *weight_s32, int 
 
     updateWeight(weight_s32);
 
-    if (mod2 ==whenMod2) {
+    if (mod2 == whenMod2) {
         if (first_DeNU == 0) {//闂備礁鎲￠悷顖涚濞嗘垶顫曞ù鍏兼綑閹瑰爼鏌曟繛鍨姎闁诲繈鍎遍埞鎴︻敊绾板崬鍓伴柣搴＄仛閻擄繝骞嗛崘顔肩妞ゆ帊绶″Σ顖炴⒑缁嬪尅鏀婚柣鐔村妿閹广垹顓奸崶銊ヤ粧闂佽法鍣﹂幏锟�
             first_DeNU = 1;
             int len = NUC_s32->rows * NUC_s32->cols;

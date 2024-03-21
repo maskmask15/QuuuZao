@@ -1,24 +1,13 @@
-//
-// Created by ozgaga on 2022/11/2.
-//
-
 #include <stdlib.h>
 #include <math.h>
 #include "InitParam.h"
 #include "../mat/matCal_s32.h"
 #include "../mat/matCal_s64.h"
 #include "file_op.h"
-
 #include <stdio.h>
 
 struct GlobalNUC globalNuc;
 struct GlobalVar globalVar;
-
-//struct pthread_nuc pthread_DeFPN;
-//struct pthread_nuc pthread_DeStrip;
-//struct pthread_nuc pthread_DeShading;
-//struct pthread_nuc pthread_DeNU;
-//struct pthread_nuc pthread_DeNoise;
 
 // Shading_S64閺�鎯с亣娴滐拷2^ShShift
 // Shading4_S64閺�鎯с亣娴滐拷2^Sh4Shift

@@ -1,0 +1,80 @@
+2024-02-25T14:29:13.072859100255-14:29:13 **** Incremental Build of configuration Release for project cameralink_udp ****
+000-make all 
+000-'Building file: ../src/nuc/IRNUC.c'
+000-'Invoking: ARM v8 gcc compiler'
+000-aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/nuc/IRNUC.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include -MMD -MP -MF"src/nuc/IRNUC.d" -MT"src/nuc/IRNUC.o" -o "src/nuc/IRNUC.o" "../src/nuc/IRNUC.c"
+000-In file included from ../src/nuc/utils.h:11,
+000-                 from ../src/nuc/IRNUC.h:8,
+000-                 from ../src/nuc/IRNUC.c:8:
+000/cameralink_udp/src/nuc/InitParam.h26-1-1'struct SSN_param' declared inside parameter list will not be visible outside of this definition or declaration1-../src/nuc/InitParam.h:26:27: warning: 'struct SSN_param' declared inside parameter list will not be visible outside of this definition or declaration
+000-   26 |                    struct SSN_param *ssnParam);
+000-      |                           ^~~~~~~~~
+000-../src/nuc/IRNUC.c: In function 'init_infrared_NUC':
+000/cameralink_udp/src/nuc/IRNUC.c35-1-1passing argument 5 of 'InitIntensity' from incompatible pointer type [-Wincompatible-pointer-types]1-../src/nuc/IRNUC.c:35:74: warning: passing argument 5 of 'InitIntensity' from incompatible pointer type [-Wincompatible-pointer-types]
+000-   35 |  InitIntensity(FrameRate, NUIntensity, ShadingIntensity, NoiseIntensity, &ssnParam);
+000-      |                                                                          ^~~~~~~~~
+000-      |                                                                          |
+000-      |                                                                          struct SSN_param *
+000-In file included from ../src/nuc/utils.h:11,
+000-                 from ../src/nuc/IRNUC.h:8,
+000-                 from ../src/nuc/IRNUC.c:8:
+000/cameralink_udp/src/nuc/InitParam.h26-1-1expected 'struct SSN_param *' but argument is of type 'struct SSN_param *'0-../src/nuc/InitParam.h:26:38: note: expected 'struct SSN_param *' but argument is of type 'struct SSN_param *'
+000-   26 |                    struct SSN_param *ssnParam);
+000-      |                    ~~~~~~~~~~~~~~~~~~^~~~~~~~
+000/cameralink_udp/src/nuc/IRNUC.c39-1-1passing argument 3 of 'createMat_u16_A' from incompatible pointer type [-Wincompatible-pointer-types]1-../src/nuc/IRNUC.c:39:43: warning: passing argument 3 of 'createMat_u16_A' from incompatible pointer type [-Wincompatible-pointer-types]
+000-   39 |     Frame = createMat_u16_A(src_H, src_W, FP);
+000-      |                                           ^~
+000-      |                                           |
+000-      |                                           int32_t * {aka int *}
+000-In file included from ../src/nuc/utils.h:10,
+000-                 from ../src/nuc/IRNUC.h:8,
+000-                 from ../src/nuc/IRNUC.c:8:
+000/cameralink_udp/src/mat/mat.h52-1-1expected 'uint16_t *' {aka 'short unsigned int *'} but argument is of type 'int32_t *' {aka 'int *'}0-../src/nuc/../mat/mat.h:52:56: note: expected 'uint16_t *' {aka 'short unsigned int *'} but argument is of type 'int32_t *' {aka 'int *'}
+000-   52 | mat_u16 *createMat_u16_A(int rows, int cols, uint16_t *data);
+000-      |                                              ~~~~~~~~~~^~~~
+000-../src/nuc/IRNUC.c: In function 'infrared_NUC':
+000/cameralink_udp/src/debug.h14-1-1passing argument 3 of 'compareMean_s32' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/../debug.h:14:49: warning: passing argument 3 of 'compareMean_s32' makes pointer from integer without a cast [-Wint-conversion]
+000-   14 | #define debugMean(x) compareMean_s32(x,__FILE__,__LINE__)
+000-      |                                                 ^~~~~~~~
+000-      |                                                 |
+000-      |                                                 int
+000/cameralink_udp/src/nuc/IRNUC.c65-1-1in expansion of macro 'debugMean'0-../src/nuc/IRNUC.c:65:5: note: in expansion of macro 'debugMean'
+000-   65 |     debugMean(NUC);
+000-      |     ^~~~~~~~~
+000-In file included from ../src/nuc/IRNUC.c:13:
+000/cameralink_udp/src/debug.h9-1-1expected 'char *' but argument is of type 'int'0-../src/nuc/../debug.h:9:63: note: expected 'char *' but argument is of type 'int'
+000-    9 | int32_t compareMean_s32(const mat_s32 *src, char *file, char* line);
+000-      |                                                         ~~~~~~^~~~
+000/cameralink_udp/src/debug.h14-1-1passing argument 3 of 'compareMean_s32' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/../debug.h:14:49: warning: passing argument 3 of 'compareMean_s32' makes pointer from integer without a cast [-Wint-conversion]
+000-   14 | #define debugMean(x) compareMean_s32(x,__FILE__,__LINE__)
+000-      |                                                 ^~~~~~~~
+000-      |                                                 |
+000-      |                                                 int
+000/cameralink_udp/src/nuc/IRNUC.c72-1-1in expansion of macro 'debugMean'0-../src/nuc/IRNUC.c:72:2: note: in expansion of macro 'debugMean'
+000-   72 |  debugMean(NUC);
+000-      |  ^~~~~~~~~
+000/cameralink_udp/src/debug.h9-1-1expected 'char *' but argument is of type 'int'0-../src/nuc/../debug.h:9:63: note: expected 'char *' but argument is of type 'int'
+000-    9 | int32_t compareMean_s32(const mat_s32 *src, char *file, char* line);
+000-      |                                                         ~~~~~~^~~~
+000/cameralink_udp/src/debug.h14-1-1passing argument 3 of 'compareMean_s32' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/../debug.h:14:49: warning: passing argument 3 of 'compareMean_s32' makes pointer from integer without a cast [-Wint-conversion]
+000-   14 | #define debugMean(x) compareMean_s32(x,__FILE__,__LINE__)
+000-      |                                                 ^~~~~~~~
+000-      |                                                 |
+000-      |                                                 int
+000/cameralink_udp/src/nuc/IRNUC.c74-1-1in expansion of macro 'debugMean'0-../src/nuc/IRNUC.c:74:5: note: in expansion of macro 'debugMean'
+000-   74 |     debugMean(NUC);
+000-      |     ^~~~~~~~~
+000/cameralink_udp/src/debug.h9-1-1expected 'char *' but argument is of type 'int'0-../src/nuc/../debug.h:9:63: note: expected 'char *' but argument is of type 'int'
+000-    9 | int32_t compareMean_s32(const mat_s32 *src, char *file, char* line);
+000-      |                                                         ~~~~~~^~~~
+000-'Finished building: ../src/nuc/IRNUC.c'
+000-' '
+000-'Building target: cameralink_udp.elf'
+000-'Invoking: ARM v8 gcc linker'
+000-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bsplib/lib -o "cameralink_udp.elf"  ./src/xdm/dma.o  ./src/nuc/IRNUC.o ./src/nuc/InitParam.o ./src/nuc/SSN.o ./src/nuc/file_op.o ./src/nuc/main.o ./src/nuc/shareOp.o ./src/nuc/utils.o  ./src/mat/mat.o ./src/mat/matCalGaussian_f32.o ./src/mat/matCalGaussian_s32.o ./src/mat/matCalGaussian_s64.o ./src/mat/matCalHist.o ./src/mat/matCalMedCover.o ./src/mat/matCal_s32.o ./src/mat/matCal_s64.o  ./src/debug.o ./src/display_demo.o ./src/echo.o ./src/lwip_app.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/udp_init.o ./src/vdma.o ./src/zynq_interrupt.o   -l-m -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+000-c:/xilinx_vitis/vitis/2021.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/10.2.0/real-ld.exe: cannot find -l-m
+000-collect2.exe: error: ld returned 1 exit status
+000/cameralink_udp0-1-1make: *** [makefile:41: cameralink_udp.elf] Error 12-make: *** [makefile:41: cameralink_udp.elf] Error 1
+00255-
+14:29:13 Build Finished (took 748ms)
+
