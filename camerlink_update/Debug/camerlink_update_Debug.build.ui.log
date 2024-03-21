@@ -1,7 +1,242 @@
-2024-03-20T17:05:40.338176900255-17:05:40 **** Clean-only build of configuration Debug for project camerlink_update ****
-000-make clean 
-000-rm -rf  ./src/xdm/dma.o ./src/xdm/dma_DeNU_2.o  ./src/nuc/DeFPN.o ./src/nuc/DeNU_2.o ./src/nuc/DeNoise.o ./src/nuc/DeShading.o ./src/nuc/DeStrip.o ./src/nuc/IRNUC.o ./src/nuc/InitParam.o ./src/nuc/SSN.o ./src/nuc/file_op.o ./src/nuc/main.o ./src/nuc/shareOp.o ./src/nuc/utils.o  ./src/mat/mat.o ./src/mat/matCalGaussian_f32.o ./src/mat/matCalGaussian_s32.o ./src/mat/matCalGaussian_s64.o ./src/mat/matCalHist.o ./src/mat/matCalMedCover.o ./src/mat/matCal_s32.o ./src/mat/matCal_s64.o  ./src/helloworld.o ./src/platform.o  ./src/xdm/dma.d ./src/xdm/dma_DeNU_2.d  ./src/nuc/DeFPN.d ./src/nuc/DeNU_2.d ./src/nuc/DeNoise.d ./src/nuc/DeShading.d ./src/nuc/DeStrip.d ./src/nuc/IRNUC.d ./src/nuc/InitParam.d ./src/nuc/SSN.d ./src/nuc/file_op.d ./src/nuc/main.d ./src/nuc/shareOp.d ./src/nuc/utils.d  ./src/mat/mat.d ./src/mat/matCalGaussian_f32.d ./src/mat/matCalGaussian_s32.d ./src/mat/matCalGaussian_s64.d ./src/mat/matCalHist.d ./src/mat/matCalMedCover.d ./src/mat/matCal_s32.d ./src/mat/matCal_s64.d  ./src/helloworld.d ./src/platform.d  camerlink_update.elf.size  camerlink_update.elf
+2024-03-21T19:34:07.181014600255-19:34:07 **** Build of configuration Debug for project camerlink_update ****
+000-make all 
+000-'Building file: ../src/nuc/IRNUC.c'
+000-'Invoking: ARM v8 gcc compiler'
+000-aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/nuc/IRNUC.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/nuc/IRNUC.d" -MT"src/nuc/IRNUC.o" -o "src/nuc/IRNUC.o" "../src/nuc/IRNUC.c"
+000-../src/nuc/IRNUC.c: In function 'infrared_NUC':
+000/camerlink_update/src/nuc/IRNUC.c48-1-1too many arguments for format [-Wformat-extra-args]1-../src/nuc/IRNUC.c:48:15: warning: too many arguments for format [-Wformat-extra-args]
+000-   48 |        printf("cpu0 read image update weight\n", n);
+000-      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+000/camerlink_update/src/nuc/IRNUC.c26-1-1unused variable 'MAX' [-Wunused-variable]1-../src/nuc/IRNUC.c:26:21: warning: unused variable 'MAX' [-Wunused-variable]
+000-   26 |     double MIN = 0, MAX = 65535;   // 2^16-1
+000-      |                     ^~~
+000/camerlink_update/src/nuc/IRNUC.c26-1-1unused variable 'MIN' [-Wunused-variable]1-../src/nuc/IRNUC.c:26:12: warning: unused variable 'MIN' [-Wunused-variable]
+000-   26 |     double MIN = 0, MAX = 65535;   // 2^16-1
+000-      |            ^~~
+000/camerlink_update/src/nuc/IRNUC.c24-1-1unused variable 'time_r' [-Wunused-variable]1-../src/nuc/IRNUC.c:24:9: warning: unused variable 'time_r' [-Wunused-variable]
+000-   24 |     u32 time_r,SSN_time = 0;
+000-      |         ^~~~~~
+000-'Finished building: ../src/nuc/IRNUC.c'
+000-' '
+000-'Building file: ../src/nuc/InitParam.c'
+000-'Invoking: ARM v8 gcc compiler'
+000-aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/nuc/InitParam.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/nuc/InitParam.d" -MT"src/nuc/InitParam.o" -o "src/nuc/InitParam.o" "../src/nuc/InitParam.c"
+000-'Finished building: ../src/nuc/InitParam.c'
+000-' '
+000-'Building file: ../src/nuc/SSN.c'
+000-'Invoking: ARM v8 gcc compiler'
+000-aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/nuc/SSN.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/nuc/SSN.d" -MT"src/nuc/SSN.o" -o "src/nuc/SSN.o" "../src/nuc/SSN.c"
+000-../src/nuc/SSN.c: In function 'updateWeight':
+000/camerlink_update/src/nuc/SSN.c29-1-1this 'while' clause does not guard... [-Wmisleading-indentation]1-../src/nuc/SSN.c:29:5: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+000-   29 |     while(get_weight() == 1);//缁涘绶熸稉濠佺濞嗏剝娼堥柌宥堫潶鐠囪褰�?
+000-      |     ^~~~~
+000/camerlink_update/src/nuc/SSN.c30-1-1...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'0-../src/nuc/SSN.c:30:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+000-   30 |  write_weight(dst);//閸愭瑥鍙嗛弬鎵畱閺夊啴鍣�
+000-      |  ^~~~~~~~~~~~
+000-../src/nuc/SSN.c: In function 'SSN':
+000/camerlink_update/src/nuc/SSN.c78-1-1unused variable 'start_time' [-Wunused-variable]1-../src/nuc/SSN.c:78:20: warning: unused variable 'start_time' [-Wunused-variable]
+000-   78 |     struct timeval start_time;
+000-      |                    ^~~~~~~~~~
+000/camerlink_update/src/nuc/SSN.c77-1-1unused variable 'end_time' [-Wunused-variable]1-../src/nuc/SSN.c:77:20: warning: unused variable 'end_time' [-Wunused-variable]
+000-   77 |     struct timeval end_time;
+000-      |                    ^~~~~~~~
+000-'Finished building: ../src/nuc/SSN.c'
+000-' '
+000-'Building file: ../src/nuc/main.c'
+000-'Invoking: ARM v8 gcc compiler'
+000-aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/nuc/main.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/nuc/main.d" -MT"src/nuc/main.o" -o "src/nuc/main.o" "../src/nuc/main.c"
+000-'Finished building: ../src/nuc/main.c'
+000-' '
+000-'Building file: ../src/nuc/shareOp.c'
+000-'Invoking: ARM v8 gcc compiler'
+000-aarch64-none-elf-gcc -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/nuc/shareOp.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include -MMD -MP -MF"src/nuc/shareOp.d" -MT"src/nuc/shareOp.o" -o "src/nuc/shareOp.o" "../src/nuc/shareOp.c"
+000-../src/nuc/shareOp.c: In function 'read_share_data':
+000/camerlink_update/src/nuc/shareOp.c6-1-1passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]1-../src/nuc/shareOp.c:6:38: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+000-    6 |   shareData->data[i] = Xil_In32(addr + i);
+000-      |                                 ~~~~~^~~
+000-      |                                      |
+000-      |                                      int *
+000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xscugic.h:189,
+000-                 from ../src/nuc/shareOpConfig.h:8,
+000-                 from ../src/nuc/shareOp.c:1:
+000/camerlink_update134-1-1expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'0-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xil_io.h:134:36: note: expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'
+000-  134 | static INLINE u32 Xil_In32(UINTPTR Addr)
+000-      |                            ~~~~~~~~^~~~
+000/camerlink_update/src/nuc/shareOp.c8-1-1passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]1-../src/nuc/shareOp.c:8:12: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+000-    8 |  Xil_Out32(flag, 0);
+000-      |            ^~~~
+000-      |            |
+000-      |            int *
+000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xscugic.h:189,
+000-                 from ../src/nuc/shareOpConfig.h:8,
+000-                 from ../src/nuc/shareOp.c:1:
+000/camerlink_update208-1-1expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'0-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'
+000-  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+000-      |                              ~~~~~~~~^~~~
+000-../src/nuc/shareOp.c: In function 'write_share_data':
+000/camerlink_update/src/nuc/shareOp.c14-1-1passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]1-../src/nuc/shareOp.c:14:18: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+000-   14 |   Xil_Out32(addr + i, shareData->data[i]);
+000-      |             ~~~~~^~~
+000-      |                  |
+000-      |                  int *
+000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xscugic.h:189,
+000-                 from ../src/nuc/shareOpConfig.h:8,
+000-                 from ../src/nuc/shareOp.c:1:
+000/camerlink_update208-1-1expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'0-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'
+000-  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+000-      |                              ~~~~~~~~^~~~
+000/camerlink_update/src/nuc/shareOp.c16-1-1passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]1-../src/nuc/shareOp.c:16:12: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+000-   16 |  Xil_Out32(flag, 1);
+000-      |            ^~~~
+000-      |            |
+000-      |            int *
+000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xscugic.h:189,
+000-                 from ../src/nuc/shareOpConfig.h:8,
+000-                 from ../src/nuc/shareOp.c:1:
+000/camerlink_update208-1-1expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'0-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'
+000-  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+000-      |                              ~~~~~~~~^~~~
+000-In file included from ../src/nuc/shareOp.c:1:
+000-../src/nuc/shareOp.c: In function 'read_weight':
+000/camerlink_update/src/nuc/shareOpConfig.h20-1-1passing argument 2 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/shareOpConfig.h:20:25: warning: passing argument 2 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]
+000-   20 | #define SHARE_BASE_ADDR 0x70000000
+000-      |                         ^
+000-      |                         |
+000-      |                         int
+000/camerlink_update/src/nuc/shareOpConfig.h29-1-1in expansion of macro 'SHARE_BASE_ADDR'0-../src/nuc/shareOpConfig.h:29:27: note: in expansion of macro 'SHARE_BASE_ADDR'
+000-   29 | #define WEIGHT_BASE       SHARE_BASE_ADDR + (640 * 512 * 4 + 0x20)
+000-      |                           ^~~~~~~~~~~~~~~
+000/camerlink_update/src/nuc/shareOp.c20-1-1in expansion of macro 'WEIGHT_BASE'0-../src/nuc/shareOp.c:20:30: note: in expansion of macro 'WEIGHT_BASE'
+000-   20 |  read_share_data(weight_s32, WEIGHT_BASE, WEIGHT_FLAG_BASE);
+000-      |                              ^~~~~~~~~~~
+000/camerlink_update/src/nuc/shareOp.c3-1-1expected 'int *' but argument is of type 'int'0-../src/nuc/shareOp.c:3:47: note: expected 'int *' but argument is of type 'int'
+000-    3 | void read_share_data(mat_s32 *shareData, int *addr, int *flag){
+000-      |                                          ~~~~~^~~~
+000-In file included from ../src/nuc/shareOp.c:1:
+000/camerlink_update/src/nuc/shareOpConfig.h20-1-1passing argument 3 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/shareOpConfig.h:20:25: warning: passing argument 3 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]
+000-   20 | #define SHARE_BASE_ADDR 0x70000000
+000-      |                         ^
+000-      |                         |
+000-      |                         int
+000/camerlink_update/src/nuc/shareOpConfig.h25-1-1in expansion of macro 'SHARE_BASE_ADDR'0-../src/nuc/shareOpConfig.h:25:28: note: in expansion of macro 'SHARE_BASE_ADDR'
+000-   25 | #define WEIGHT_FLAG_BASE   SHARE_BASE_ADDR + 0xc
+000-      |                            ^~~~~~~~~~~~~~~
+000/camerlink_update/src/nuc/shareOp.c20-1-1in expansion of macro 'WEIGHT_FLAG_BASE'0-../src/nuc/shareOp.c:20:43: note: in expansion of macro 'WEIGHT_FLAG_BASE'
+000-   20 |  read_share_data(weight_s32, WEIGHT_BASE, WEIGHT_FLAG_BASE);
+000-      |                                           ^~~~~~~~~~~~~~~~
+000/camerlink_update/src/nuc/shareOp.c3-1-1expected 'int *' but argument is of type 'int'0-../src/nuc/shareOp.c:3:58: note: expected 'int *' but argument is of type 'int'
+000-    3 | void read_share_data(mat_s32 *shareData, int *addr, int *flag){
+000-      |                                                     ~~~~~^~~~
+000-In file included from ../src/nuc/shareOp.c:1:
+000-../src/nuc/shareOp.c: In function 'write_weight':
+000/camerlink_update/src/nuc/shareOpConfig.h20-1-1passing argument 2 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/shareOpConfig.h:20:25: warning: passing argument 2 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]
+000-   20 | #define SHARE_BASE_ADDR 0x70000000
+000-      |                         ^
+000-      |                         |
+000-      |                         int
+000/camerlink_update/src/nuc/shareOpConfig.h29-1-1in expansion of macro 'SHARE_BASE_ADDR'0-../src/nuc/shareOpConfig.h:29:27: note: in expansion of macro 'SHARE_BASE_ADDR'
+000-   29 | #define WEIGHT_BASE       SHARE_BASE_ADDR + (640 * 512 * 4 + 0x20)
+000-      |                           ^~~~~~~~~~~~~~~
+000/camerlink_update/src/nuc/shareOp.c24-1-1in expansion of macro 'WEIGHT_BASE'0-../src/nuc/shareOp.c:24:31: note: in expansion of macro 'WEIGHT_BASE'
+000-   24 |  write_share_data(weight_s32, WEIGHT_BASE, WEIGHT_FLAG_BASE);
+000-      |                               ^~~~~~~~~~~
+000/camerlink_update/src/nuc/shareOp.c11-1-1expected 'int *' but argument is of type 'int'0-../src/nuc/shareOp.c:11:48: note: expected 'int *' but argument is of type 'int'
+000-   11 | void write_share_data(mat_s32 *shareData, int *addr, int *flag){
+000-      |                                           ~~~~~^~~~
+000-In file included from ../src/nuc/shareOp.c:1:
+000/camerlink_update/src/nuc/shareOpConfig.h20-1-1passing argument 3 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/shareOpConfig.h:20:25: warning: passing argument 3 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]
+000-   20 | #define SHARE_BASE_ADDR 0x70000000
+000-      |                         ^
+000-      |                         |
+000-      |                         int
+000/camerlink_update/src/nuc/shareOpConfig.h25-1-1in expansion of macro 'SHARE_BASE_ADDR'0-../src/nuc/shareOpConfig.h:25:28: note: in expansion of macro 'SHARE_BASE_ADDR'
+000-   25 | #define WEIGHT_FLAG_BASE   SHARE_BASE_ADDR + 0xc
+000-      |                            ^~~~~~~~~~~~~~~
+000/camerlink_update/src/nuc/shareOp.c24-1-1in expansion of macro 'WEIGHT_FLAG_BASE'0-../src/nuc/shareOp.c:24:44: note: in expansion of macro 'WEIGHT_FLAG_BASE'
+000-   24 |  write_share_data(weight_s32, WEIGHT_BASE, WEIGHT_FLAG_BASE);
+000-      |                                            ^~~~~~~~~~~~~~~~
+000/camerlink_update/src/nuc/shareOp.c11-1-1expected 'int *' but argument is of type 'int'0-../src/nuc/shareOp.c:11:59: note: expected 'int *' but argument is of type 'int'
+000-   11 | void write_share_data(mat_s32 *shareData, int *addr, int *flag){
+000-      |                                                      ~~~~~^~~~
+000-In file included from ../src/nuc/shareOp.c:1:
+000-../src/nuc/shareOp.c: In function 'read_nuc':
+000/camerlink_update/src/nuc/shareOpConfig.h20-1-1passing argument 2 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/shareOpConfig.h:20:25: warning: passing argument 2 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]
+000-   20 | #define SHARE_BASE_ADDR 0x70000000
+000-      |                         ^
+000-      |                         |
+000-      |                         int
+000/camerlink_update/src/nuc/shareOpConfig.h28-1-1in expansion of macro 'SHARE_BASE_ADDR'0-../src/nuc/shareOpConfig.h:28:26: note: in expansion of macro 'SHARE_BASE_ADDR'
+000-   28 | #define NUC_BASE         SHARE_BASE_ADDR + 0x20
+000-      |                          ^~~~~~~~~~~~~~~
+000/camerlink_update/src/nuc/shareOp.c28-1-1in expansion of macro 'NUC_BASE'0-../src/nuc/shareOp.c:28:27: note: in expansion of macro 'NUC_BASE'
+000-   28 |  read_share_data(nuc_s32, NUC_BASE, IMAGE_FLAG_BASE);
+000-      |                           ^~~~~~~~
+000/camerlink_update/src/nuc/shareOp.c3-1-1expected 'int *' but argument is of type 'int'0-../src/nuc/shareOp.c:3:47: note: expected 'int *' but argument is of type 'int'
+000-    3 | void read_share_data(mat_s32 *shareData, int *addr, int *flag){
+000-      |                                          ~~~~~^~~~
+000-In file included from ../src/nuc/shareOp.c:1:
+000/camerlink_update/src/nuc/shareOpConfig.h20-1-1passing argument 3 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/shareOpConfig.h:20:25: warning: passing argument 3 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]
+000-   20 | #define SHARE_BASE_ADDR 0x70000000
+000-      |                         ^
+000-      |                         |
+000-      |                         int
+000/camerlink_update/src/nuc/shareOpConfig.h24-1-1in expansion of macro 'SHARE_BASE_ADDR'0-../src/nuc/shareOpConfig.h:24:27: note: in expansion of macro 'SHARE_BASE_ADDR'
+000-   24 | #define IMAGE_FLAG_BASE   SHARE_BASE_ADDR + 0x8
+000-      |                           ^~~~~~~~~~~~~~~
+000/camerlink_update/src/nuc/shareOp.c28-1-1in expansion of macro 'IMAGE_FLAG_BASE'0-../src/nuc/shareOp.c:28:37: note: in expansion of macro 'IMAGE_FLAG_BASE'
+000-   28 |  read_share_data(nuc_s32, NUC_BASE, IMAGE_FLAG_BASE);
+000-      |                                     ^~~~~~~~~~~~~~~
+000/camerlink_update/src/nuc/shareOp.c3-1-1expected 'int *' but argument is of type 'int'0-../src/nuc/shareOp.c:3:58: note: expected 'int *' but argument is of type 'int'
+000-    3 | void read_share_data(mat_s32 *shareData, int *addr, int *flag){
+000-      |                                                     ~~~~~^~~~
+000-In file included from ../src/nuc/shareOp.c:1:
+000-../src/nuc/shareOp.c: In function 'write_nuc':
+000/camerlink_update/src/nuc/shareOpConfig.h20-1-1passing argument 2 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/shareOpConfig.h:20:25: warning: passing argument 2 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]
+000-   20 | #define SHARE_BASE_ADDR 0x70000000
+000-      |                         ^
+000-      |                         |
+000-      |                         int
+000/camerlink_update/src/nuc/shareOpConfig.h28-1-1in expansion of macro 'SHARE_BASE_ADDR'0-../src/nuc/shareOpConfig.h:28:26: note: in expansion of macro 'SHARE_BASE_ADDR'
+000-   28 | #define NUC_BASE         SHARE_BASE_ADDR + 0x20
+000-      |                          ^~~~~~~~~~~~~~~
+000/camerlink_update/src/nuc/shareOp.c32-1-1in expansion of macro 'NUC_BASE'0-../src/nuc/shareOp.c:32:28: note: in expansion of macro 'NUC_BASE'
+000-   32 |  write_share_data(nuc_s32, NUC_BASE, IMAGE_FLAG_BASE);
+000-      |                            ^~~~~~~~
+000/camerlink_update/src/nuc/shareOp.c11-1-1expected 'int *' but argument is of type 'int'0-../src/nuc/shareOp.c:11:48: note: expected 'int *' but argument is of type 'int'
+000-   11 | void write_share_data(mat_s32 *shareData, int *addr, int *flag){
+000-      |                                           ~~~~~^~~~
+000-In file included from ../src/nuc/shareOp.c:1:
+000/camerlink_update/src/nuc/shareOpConfig.h20-1-1passing argument 3 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/shareOpConfig.h:20:25: warning: passing argument 3 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]
+000-   20 | #define SHARE_BASE_ADDR 0x70000000
+000-      |                         ^
+000-      |                         |
+000-      |                         int
+000/camerlink_update/src/nuc/shareOpConfig.h24-1-1in expansion of macro 'SHARE_BASE_ADDR'0-../src/nuc/shareOpConfig.h:24:27: note: in expansion of macro 'SHARE_BASE_ADDR'
+000-   24 | #define IMAGE_FLAG_BASE   SHARE_BASE_ADDR + 0x8
+000-      |                           ^~~~~~~~~~~~~~~
+000/camerlink_update/src/nuc/shareOp.c32-1-1in expansion of macro 'IMAGE_FLAG_BASE'0-../src/nuc/shareOp.c:32:38: note: in expansion of macro 'IMAGE_FLAG_BASE'
+000-   32 |  write_share_data(nuc_s32, NUC_BASE, IMAGE_FLAG_BASE);
+000-      |                                      ^~~~~~~~~~~~~~~
+000/camerlink_update/src/nuc/shareOp.c11-1-1expected 'int *' but argument is of type 'int'0-../src/nuc/shareOp.c:11:59: note: expected 'int *' but argument is of type 'int'
+000-   11 | void write_share_data(mat_s32 *shareData, int *addr, int *flag){
+000-      |                                                      ~~~~~^~~~
+000-../src/nuc/shareOp.c: In function 'init_share_addr':
+000/camerlink_update/src/nuc/shareOp.c37-1-1implicit declaration of function 'Xil_SetTlbAttributes' [-Wimplicit-function-declaration]1-../src/nuc/shareOp.c:37:2: warning: implicit declaration of function 'Xil_SetTlbAttributes' [-Wimplicit-function-declaration]
+000-   37 |  Xil_SetTlbAttributes(SHARE_BASE_ADDR, 0x14de2);  //绂佺�? 0xfffffff0 鐨� Cache 灞炴��
+000-      |  ^~~~~~~~~~~~~~~~~~~~
+000-'Finished building: ../src/nuc/shareOp.c'
+000-' '
+000-'Building target: camerlink_update.elf'
+000-'Invoking: ARM v8 gcc linker'
+000-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/bsplib/lib -o "camerlink_update.elf"  ./src/xdm/dma.o ./src/xdm/dma_DeNU_2.o  ./src/nuc/DeFPN.o ./src/nuc/DeNU_2.o ./src/nuc/DeNoise.o ./src/nuc/DeShading.o ./src/nuc/DeStrip.o ./src/nuc/IRNUC.o ./src/nuc/InitParam.o ./src/nuc/SSN.o ./src/nuc/file_op.o ./src/nuc/main.o ./src/nuc/shareOp.o ./src/nuc/utils.o  ./src/mat/mat.o ./src/mat/matCalGaussian_f32.o ./src/mat/matCalGaussian_s32.o ./src/mat/matCalGaussian_s64.o ./src/mat/matCalHist.o ./src/mat/matCalMedCover.o ./src/mat/matCal_s32.o ./src/mat/matCal_s64.o  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: camerlink_update.elf'
+000-' '
+000-'Invoking: ARM v8 Print Size'
+000-aarch64-none-elf-size camerlink_update.elf  |tee "camerlink_update.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000- 243592	   4836	446710376	446958804	1aa40cd4	camerlink_update.elf
+000-'Finished building: camerlink_update.elf.size'
 000-' '
 00255-
-17:05:40 Build Finished (took 194ms)
+19:34:09 Build Finished (took 2s.242ms)
 

@@ -345,3 +345,7 @@ timestamp=[2024-03-20 18:06:05], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00
 timestamp=[2024-03-21 15:45:39], mode=WORKBENCH_START, duration=0:00:13.317, duration_ms=13317, data={}
 timestamp=[2024-03-21 15:45:41], mode=WORKBENCH_UI_INIT, duration=0:00:01.433, duration_ms=1433, data={editors_count=8, platform_editors_count=0, projects_count=7, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,cameralink_udp,cameralink_udp_system,camerlink_update,lwip_modi_3,single_udp_test,single_udp_test_system}
 timestamp=[2024-03-21 15:45:47], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.081, duration_ms=81, data={}
+timestamp=[2024-03-21 19:32:55], mode=PLATFORM_GENERATION, duration=0:00:44.048, duration_ms=44048, data={name=lwip_modi_3}
+timestamp=[2024-03-21 19:33:19], mode=BUILD, duration=0:00:03.214, duration_ms=3214, data={name=cameralink_udp, configuration=Debug, clean_build=false}
+timestamp=[2024-03-21 19:34:07], mode=PLATFORM_GENERATION, duration=0:00:46.342, duration_ms=46342, data={name=lwip_modi_3}
+timestamp=[2024-03-21 19:34:09], mode=BUILD, duration=0:00:02.265, duration_ms=2265, data={name=camerlink_update, configuration=Debug, clean_build=false}

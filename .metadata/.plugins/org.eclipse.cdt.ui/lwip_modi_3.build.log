@@ -1,6 +1,6 @@
-20:35:19 **** Build of project lwip_modi_3 ****
-buildplatform.bat 56030 lwip_modi_3  
-XSDB Server Channel: tcfchan#3
+19:33:20 **** Build of project lwip_modi_3 ****
+buildplatform.bat 63527 lwip_modi_3  
+XSDB Server Channel: tcfchan#2
 Reading the platform  : "lwip_modi_3"
 Failed to set param in mss for LIB
 Failed to set param in mss for LIB
@@ -32,5 +32,5 @@ No Platform exists with name:  lwip_modi_3
     set lastind..."
     (file "C:/Xilinx_vitis/Vitis/2021.2\scripts\vitis\util\buildplatform.tcl" line 11)
 
-20:36:08 Build Finished (took 48s.839ms)
+19:34:06 Build Finished (took 45s.896ms)
 
