@@ -1,7 +1,3 @@
-//
-// Created by ozgaga on 2022/11/2.
-//
-
 #include "xaxidma.h"
 #include "xparameters.h"
 #include "xil_exception.h"

@@ -6,8 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="return"/>
+		<item key="selection" value="whenMod1"/>
 		<list key="findhistory">
+			<item value="whenMod1"/>
+			<item value="get_weight"/>
+			<item value="packet_size"/>
+			<item value="frame_length_curr"/>
 			<item value="return"/>
 			<item value="video_path"/>
 			<item value="infrared_NUC"/>
@@ -17,12 +21,8 @@
 			<item value="vdma_vin"/>
 			<item value="vdma_vout"/>
 			<item value="main"/>
-			<item value="packet_size"/>
-			<item value="frame_length_curr"/>
 			<item value="whenMod2"/>
 			<item value="mod2"/>
-			<item value="FP"/>
-			<item value="res_H"/>
 		</list>
 		<list key="replacehistory">
 		</list>

@@ -7361,3 +7361,20 @@ Reason: No Platforms Found.
 15:45:47 INFO  : Platform repository initialization has completed.
 15:45:47 INFO  : Registering command handlers for Vitis TCF services
 15:45:48 INFO  : Successfully done query RDI_DATADIR 
+19:32:55 INFO  : Checking for BSP changes to sync application flags for project 'cameralink_udp'...
+19:33:16 ERROR :  [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+19:33:16 INFO  : Unable to read in MSS file D:\project\vitis_final\lwip_modi_3\export\lwip_modi_3\sw\lwip_modi_3\standalone_domain\system.mss : null
+19:33:16 WARN  : Failed to closesw "D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/system.mss"
+Reason: Cannot close sw design 'D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/system.mss'.
+Design is not opened in the current session.
+
+
+19:34:07 INFO  : Checking for BSP changes to sync application flags for project 'camerlink_update'...
+20:19:07 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\project\quzao\QuuuZao\temp_xsdb_launch_script.tcl
+20:19:10 INFO  : XSCT server has started successfully.
+20:19:10 INFO  : plnx-install-location is set to ''
+20:19:10 INFO  : Successfully done setting XSCT server connection channel  
+20:19:11 INFO  : Successfully done setting workspace for the tool. 
+20:19:11 INFO  : Platform repository initialization has completed.
+20:19:12 INFO  : Successfully done query RDI_DATADIR 
+20:19:13 INFO  : Registering command handlers for Vitis TCF services

@@ -12,6 +12,7 @@ struct GlobalVar globalVar;
 // Shading_S64閺�鎯с亣娴滐拷2^ShShift
 // Shading4_S64閺�鎯с亣娴滐拷2^Sh4Shift
 // FP_S64閺�鎯с亣娴滐拷2^dr
+
 void preProcessShading(mat_s64 *Shading_S64, mat_s64 *Shading4_S64, mat_s64 *FP_S64) {
     int H = FP_S64->rows;
     int W = FP_S64->cols;

@@ -7049,3 +7049,179 @@ Design is not opened in the current session.
 
 !ENTRY com.xilinx.sdk.utils 0 0 2024-03-21 19:34:07.154
 !MESSAGE XSCT command with result: [::hsi::utils::closesw D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/system.mss], Result: [null, ]. Thread: Worker-27: Build Project
+!SESSION 2024-03-21 20:18:56.657 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2024-03-21 20:19:05.459
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-03-21 20:19:09.520
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-03-21 20:19:09.522
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-03-21 20:19:09.522
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-21 20:19:10.966
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-21 20:19:10.966
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-21 20:19:10.982
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-21 20:19:10.993
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-21 20:19:10.995
+!MESSAGE XSCT Command: [setws D:/project/quzao/QuuuZao], Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-21 20:19:11.001
+!MESSAGE XSCT command with result: [setws D:/project/quzao/QuuuZao], Result: [null, ]. Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-21 20:19:11.998
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-21 20:19:12.759
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-21 20:19:12.760
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-21 20:19:12.761
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx_vitis/Vitis/2021.2/data]. Thread: Worker-2: Initializing s/w repositories
+!SESSION 2024-03-22 10:55:31.590 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2024-03-22 10:55:40.800
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-03-22 10:55:45.761
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-03-22 10:55:45.762
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-03-22 10:55:45.762
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:55:48.531
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:55:48.533
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-29
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:55:48.564
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:55:48.590
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-29
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:55:48.593
+!MESSAGE XSCT Command: [setws D:/project/quzao/QuuuZao], Thread: Thread-29
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:55:48.596
+!MESSAGE XSCT command with result: [setws D:/project/quzao/QuuuZao], Result: [null, ]. Thread: Thread-29
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:55:49.424
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:55:50.484
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:55:50.485
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:55:50.486
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx_vitis/Vitis/2021.2/data]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:58:50.160
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/hw/cameralink_display_wrapper_1_24_2.xsa], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:59:11.702
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/hw/cameralink_display_wrapper_1_24_2.xsa], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:59:11.709
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/hw/cameralink_display_wrapper_1_24_2.xsa D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/system.mss ], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:59:11.727
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/hw/cameralink_display_wrapper_1_24_2.xsa D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/system.mss ], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:59:11.727
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/hw/cameralink_display_wrapper_1_24_2.xsa D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:59:11.732
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/hw/cameralink_display_wrapper_1_24_2.xsa D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/system.mss], Result: [null, {"procname": "psu_cortexa53_1",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-03-22 10:59:11.732
+!MESSAGE Generating MD5 hash for file: D:\project\vitis_final\lwip_modi_3\export\lwip_modi_3\sw\lwip_modi_3\standalone_on_psu_cortexa53_1\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:59:11.740
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 10:59:11.742
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/system.mss], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 15:51:22.034
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/hw/cameralink_display_wrapper_1_24_2.xsa D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/system.mss ], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 15:51:22.052
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/hw/cameralink_display_wrapper_1_24_2.xsa D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/system.mss ], Result: [{Format=ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+, Time=1711093882051, Code=1}, ]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 15:51:22.053
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/hw/cameralink_display_wrapper_1_24_2.xsa D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/system.mss], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 15:51:22.058
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/hw/cameralink_display_wrapper_1_24_2.xsa D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/system.mss], Result: [{Format=ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+, Time=1711093882058, Code=1}, ]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-03-22 15:51:22.059
+!MESSAGE Generating MD5 hash for file: D:\project\vitis_final\lwip_modi_3\export\lwip_modi_3\sw\lwip_modi_3\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 15:51:22.063
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/system.mss], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 15:51:22.065
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/system.mss], Result: [{Format=Cannot close sw design 'D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/system.mss'.
+Design is not opened in the current session.
+
+, Time=1711093882065, Code=1}, ]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 15:56:12.028
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/hw/cameralink_display_wrapper_1_24_2.xsa D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/system.mss ], Thread: Worker-24: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 15:56:12.033
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/hw/cameralink_display_wrapper_1_24_2.xsa D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/system.mss ], Result: [null, ]. Thread: Worker-24: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 15:56:12.034
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/hw/cameralink_display_wrapper_1_24_2.xsa D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/system.mss], Thread: Worker-24: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 15:56:12.037
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/hw/cameralink_display_wrapper_1_24_2.xsa D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/system.mss], Result: [null, {"procname": "psu_cortexa53_1",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-24: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-03-22 15:56:12.037
+!MESSAGE Generating MD5 hash for file: D:\project\vitis_final\lwip_modi_3\export\lwip_modi_3\sw\lwip_modi_3\standalone_on_psu_cortexa53_1\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 15:56:12.039
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/system.mss], Thread: Worker-24: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-22 15:56:12.042
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_on_psu_cortexa53_1/system.mss], Result: [null, ]. Thread: Worker-24: Build Project

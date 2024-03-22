@@ -5,63 +5,6 @@
 #include "../mat/matCal_s64.h"
 #include <stdio.h>
 
-struct GlobalNUC globalNuc;
-struct GlobalVar globalVar;
-
-// Shading_S64闁猴拷閹佷海濞存粣鎷�2^ShShift
-// Shading4_S64闁猴拷閹佷海濞存粣鎷�2^Sh4Shift
-// FP_S64闁猴拷閹佷海濞存粣鎷�2^dr
-void preProcessShading(mat_s64 *Shading_S64, mat_s64 *Shading4_S64, mat_s64 *FP_S64) {
-    int H = FP_S64->rows;
-    int W = FP_S64->cols;
-
-    // 濞戞挸顦柌婊堝冀閸ヮ剙娅ら柡锟介幆褋浜� 2 ^ 10
-    static int sumShift = 10;
-    int64_t sum_Shading2_2 = 15567050;
-    int64_t sum_Shading2_4 = 11981357;
-    int64_t sum_Shading4_4 = 10135232;
-
-    // 闁猴拷閹佷海濞存粣鎷� 2^(dr+ShShift)=27
-    int64_t sum_Shading4_FP = 0;
-    for (int i = 0; i < H * W; i++) {
-        sum_Shading4_FP += (Shading4_S64->data[i] * FP_S64->data[i]);
-    }
-
-    // 闁猴拷閹佷海濞存粣鎷� 2^(dr+Sh4Shift)=27
-    int64_t sum_Shading2_FP = 0;
-    for (int i = 0; i < H * W; i++) {
-        sum_Shading2_FP += (Shading_S64->data[i] * FP_S64->data[i]);
-    }
-
-    // beta闁猴拷閹佷海濞存粣鎷� dr + Sh4Shift
-    int64_t beta = ((sum_Shading2_2 * sum_Shading4_FP << (Sh4Shift - ShShift)) - sum_Shading2_FP * sum_Shading2_4) /
-                   (((sum_Shading2_2 * sum_Shading4_4) >> sumShift) - ((sum_Shading2_4 * sum_Shading2_4) >> sumShift));
-
-    mat_s64 *tmp = createMat_s64(H, W);
-    for (int i = 0; i < H * W; i++) {
-        tmp->data[i] = ((FP_S64->data[i] << (Sh4Shift + Sh4Shift)) - Shading4_S64->data[i] * beta) >> Sh4Shift;
-    }
-    int64_t tmp_sum = 0;
-    for (int i = 0; i < H * W; i++) {
-        tmp_sum += (tmp->data[i] * Shading_S64->data[i]) >> (Sh4Shift - sumShift);
-    }
-
-    int64_t alpha = tmp_sum / sum_Shading2_2; // 鐎归潻濡囦簺27濞达綇鎷� dr+Sh4Shift
-
-    for (int i = 0; i < H * W; i++) {
-        FP_S64->data[i] -= (((Shading_S64->data[i] << (Sh4Shift - ShShift)) * alpha + Shading4_S64->data[i] * beta)
-                >> (Sh4Shift + Sh4Shift));
-    }
-
-    /***** globalVar.FP閻犙冾儏閿熸枻鎷� *****/
-    for (int i = 0; i < H * W; i++) {
-        globalVar.FP->data[i] = (int) (FP_S64->data[i] >> (dr - fpShift));
-    }
-    /***** globalVar.FP閻犙冾儏閿熸枻鎷� *****/
-
-    matRelease_s64(&tmp);
-}
-
 
 // 初始化中根据Intensity进行选择，避免后续循环中重复选择
 void InitIntensity(int FrameRate, int NUIntensity, int ShadingIntensity, int NoiseIntensity,

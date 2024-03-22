@@ -1,91 +1,5 @@
-2024-03-21T19:33:16.755930600255-19:33:16 **** Build of configuration Debug for project cameralink_udp ****
+2024-03-22T15:51:22.094113300255-15:51:22 **** Build of configuration Debug for project cameralink_udp ****
 000-make all 
-000-'Building file: ../src/xdm/dma.c'
-000-'Invoking: ARM v8 gcc compiler'
-000-aarch64-none-elf-gcc -Wall -O1 -g3 -c -fmessage-length=0 -MT"src/xdm/dma.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include -MMD -MP -MF"src/xdm/dma.d" -MT"src/xdm/dma.o" -o "src/xdm/dma.o" "../src/xdm/dma.c"
-000-In file included from ../src/xdm/../nuc/utils.h:11,
-000-                 from ../src/xdm/../nuc/shareOpConfig.h:9,
-000-                 from ../src/xdm/dma.h:9,
-000-                 from ../src/xdm/dma.c:1:
-000/cameralink_udp/src/nuc/InitParam.h26-1-1'struct SSN_param' declared inside parameter list will not be visible outside of this definition or declaration1-../src/xdm/../nuc/InitParam.h:26:27: warning: 'struct SSN_param' declared inside parameter list will not be visible outside of this definition or declaration
-000-   26 |                    struct SSN_param *ssnParam);
-000-      |                           ^~~~~~~~~
-000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma_bdring.h:60,
-000-                 from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma.h:467,
-000-                 from ../src/xdm/dma.h:5,
-000-                 from ../src/xdm/dma.c:1:
-000-../src/xdm/dma.c: In function 'GaussianBlur_s64_FPGA_while':
-000/cameralink_udp43-1-1'return' with a value, in function returning void [-Wreturn-type]1-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
-000-   43 | #define XST_FAILURE                     1L
-000-      |                                         ^~
-000/cameralink_udp/src/xdm/dma.c78-1-1in expansion of macro 'XST_FAILURE'0-../src/xdm/dma.c:78:10: note: in expansion of macro 'XST_FAILURE'
-000-   78 |   return XST_FAILURE;
-000-      |          ^~~~~~~~~~~
-000/cameralink_udp/src/xdm/dma.c69-1-1declared here0-../src/xdm/dma.c:69:6: note: declared here
-000-   69 | void GaussianBlur_s64_FPGA_while(const mat_s32 *src, mat_s32 *dst){
-000-      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma_bdring.h:60,
-000-                 from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma.h:467,
-000-                 from ../src/xdm/dma.h:5,
-000-                 from ../src/xdm/dma.c:1:
-000/cameralink_udp43-1-1'return' with a value, in function returning void [-Wreturn-type]1-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
-000-   43 | #define XST_FAILURE                     1L
-000-      |                                         ^~
-000/cameralink_udp/src/xdm/dma.c84-1-1in expansion of macro 'XST_FAILURE'0-../src/xdm/dma.c:84:10: note: in expansion of macro 'XST_FAILURE'
-000-   84 |   return XST_FAILURE;
-000-      |          ^~~~~~~~~~~
-000/cameralink_udp/src/xdm/dma.c69-1-1declared here0-../src/xdm/dma.c:69:6: note: declared here
-000-   69 | void GaussianBlur_s64_FPGA_while(const mat_s32 *src, mat_s32 *dst){
-000-      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma_bdring.h:60,
-000-                 from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma.h:467,
-000-                 from ../src/xdm/dma.h:5,
-000-                 from ../src/xdm/dma.c:1:
-000/cameralink_udp42-1-1'return' with a value, in function returning void [-Wreturn-type]1-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xstatus.h:42:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
-000-   42 | #define XST_SUCCESS                     0L
-000-      |                                         ^~
-000/cameralink_udp/src/xdm/dma.c92-1-1in expansion of macro 'XST_SUCCESS'0-../src/xdm/dma.c:92:9: note: in expansion of macro 'XST_SUCCESS'
-000-   92 |  return XST_SUCCESS;
-000-      |         ^~~~~~~~~~~
-000/cameralink_udp/src/xdm/dma.c69-1-1declared here0-../src/xdm/dma.c:69:6: note: declared here
-000-   69 | void GaussianBlur_s64_FPGA_while(const mat_s32 *src, mat_s32 *dst){
-000-      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-000-'Finished building: ../src/xdm/dma.c'
-000-' '
-000-'Building file: ../src/nuc/IRNUC.c'
-000-'Invoking: ARM v8 gcc compiler'
-000-aarch64-none-elf-gcc -Wall -O1 -g3 -c -fmessage-length=0 -MT"src/nuc/IRNUC.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include -MMD -MP -MF"src/nuc/IRNUC.d" -MT"src/nuc/IRNUC.o" -o "src/nuc/IRNUC.o" "../src/nuc/IRNUC.c"
-000-In file included from ../src/nuc/utils.h:11,
-000-                 from ../src/nuc/IRNUC.h:8,
-000-                 from ../src/nuc/IRNUC.c:2:
-000/cameralink_udp/src/nuc/InitParam.h26-1-1'struct SSN_param' declared inside parameter list will not be visible outside of this definition or declaration1-../src/nuc/InitParam.h:26:27: warning: 'struct SSN_param' declared inside parameter list will not be visible outside of this definition or declaration
-000-   26 |                    struct SSN_param *ssnParam);
-000-      |                           ^~~~~~~~~
-000-../src/nuc/IRNUC.c: In function 'init_infrared_NUC':
-000/cameralink_udp/src/nuc/IRNUC.c31-1-1passing argument 5 of 'InitIntensity' from incompatible pointer type [-Wincompatible-pointer-types]1-../src/nuc/IRNUC.c:31:74: warning: passing argument 5 of 'InitIntensity' from incompatible pointer type [-Wincompatible-pointer-types]
-000-   31 |  InitIntensity(FrameRate, NUIntensity, ShadingIntensity, NoiseIntensity, &ssnParam);
-000-      |                                                                          ^~~~~~~~~
-000-      |                                                                          |
-000-      |                                                                          struct SSN_param *
-000-In file included from ../src/nuc/utils.h:11,
-000-                 from ../src/nuc/IRNUC.h:8,
-000-                 from ../src/nuc/IRNUC.c:2:
-000/cameralink_udp/src/nuc/InitParam.h26-1-1expected 'struct SSN_param *' but argument is of type 'struct SSN_param *'0-../src/nuc/InitParam.h:26:38: note: expected 'struct SSN_param *' but argument is of type 'struct SSN_param *'
-000-   26 |                    struct SSN_param *ssnParam);
-000-      |                    ~~~~~~~~~~~~~~~~~~^~~~~~~~
-000/cameralink_udp/src/nuc/IRNUC.c35-1-1pointer targets in passing argument 3 of 'createMat_u16_A' differ in signedness [-Wpointer-sign]1-../src/nuc/IRNUC.c:35:43: warning: pointer targets in passing argument 3 of 'createMat_u16_A' differ in signedness [-Wpointer-sign]
-000-   35 |     Frame = createMat_u16_A(src_H, src_W, FP);
-000-      |                                           ^~
-000-      |                                           |
-000-      |                                           int16_t * {aka short int *}
-000-In file included from ../src/nuc/utils.h:10,
-000-                 from ../src/nuc/IRNUC.h:8,
-000-                 from ../src/nuc/IRNUC.c:2:
-000/cameralink_udp/src/mat/mat.h52-1-1expected 'uint16_t *' {aka 'short unsigned int *'} but argument is of type 'int16_t *' {aka 'short int *'}0-../src/nuc/../mat/mat.h:52:56: note: expected 'uint16_t *' {aka 'short unsigned int *'} but argument is of type 'int16_t *' {aka 'short int *'}
-000-   52 | mat_u16 *createMat_u16_A(int rows, int cols, uint16_t *data);
-000-      |                                              ~~~~~~~~~~^~~~
-000-'Finished building: ../src/nuc/IRNUC.c'
-000-' '
 000-'Building file: ../src/nuc/InitParam.c'
 000-'Invoking: ARM v8 gcc compiler'
 000-aarch64-none-elf-gcc -Wall -O1 -g3 -c -fmessage-length=0 -MT"src/nuc/InitParam.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include -MMD -MP -MF"src/nuc/InitParam.d" -MT"src/nuc/InitParam.o" -o "src/nuc/InitParam.o" "../src/nuc/InitParam.c"
@@ -96,127 +10,97 @@
 000-aarch64-none-elf-gcc -Wall -O1 -g3 -c -fmessage-length=0 -MT"src/nuc/SSN.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include -MMD -MP -MF"src/nuc/SSN.d" -MT"src/nuc/SSN.o" -o "src/nuc/SSN.o" "../src/nuc/SSN.c"
 000-In file included from ../src/nuc/utils.h:11,
 000-                 from ../src/nuc/IRNUC.h:8,
-000-                 from ../src/nuc/SSN.c:9:
+000-                 from ../src/nuc/SSN.c:5:
 000/cameralink_udp/src/nuc/InitParam.h26-1-1'struct SSN_param' declared inside parameter list will not be visible outside of this definition or declaration1-../src/nuc/InitParam.h:26:27: warning: 'struct SSN_param' declared inside parameter list will not be visible outside of this definition or declaration
 000-   26 |                    struct SSN_param *ssnParam);
 000-      |                           ^~~~~~~~~
 000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma_bdring.h:60,
 000-                 from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma.h:467,
-000-                 from ../src/nuc/SSN.c:5:
+000-                 from ../src/nuc/SSN.c:1:
 000-../src/nuc/SSN.c: In function 'DeNoise_FPGA':
 000/cameralink_udp43-1-1'return' with a value, in function returning void [-Wreturn-type]1-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
 000-   43 | #define XST_FAILURE                     1L
 000-      |                                         ^~
-000/cameralink_udp/src/nuc/SSN.c57-1-1in expansion of macro 'XST_FAILURE'0-../src/nuc/SSN.c:57:16: note: in expansion of macro 'XST_FAILURE'
-000-   57 |         return XST_FAILURE;
+000/cameralink_udp/src/nuc/SSN.c53-1-1in expansion of macro 'XST_FAILURE'0-../src/nuc/SSN.c:53:16: note: in expansion of macro 'XST_FAILURE'
+000-   53 |         return XST_FAILURE;
 000-      |                ^~~~~~~~~~~
-000/cameralink_udp/src/nuc/SSN.c41-1-1declared here0-../src/nuc/SSN.c:41:6: note: declared here
-000-   41 | void DeNoise_FPGA(mat_s32 *NUC_s32, int mean, int N){
+000/cameralink_udp/src/nuc/SSN.c37-1-1declared here0-../src/nuc/SSN.c:37:6: note: declared here
+000-   37 | void DeNoise_FPGA(mat_s32 *NUC_s32, int mean, int N){
 000-      |      ^~~~~~~~~~~~
 000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma_bdring.h:60,
 000-                 from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma.h:467,
-000-                 from ../src/nuc/SSN.c:5:
+000-                 from ../src/nuc/SSN.c:1:
 000/cameralink_udp43-1-1'return' with a value, in function returning void [-Wreturn-type]1-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
 000-   43 | #define XST_FAILURE                     1L
 000-      |                                         ^~
-000/cameralink_udp/src/nuc/SSN.c64-1-1in expansion of macro 'XST_FAILURE'0-../src/nuc/SSN.c:64:16: note: in expansion of macro 'XST_FAILURE'
-000-   64 |         return XST_FAILURE;
+000/cameralink_udp/src/nuc/SSN.c60-1-1in expansion of macro 'XST_FAILURE'0-../src/nuc/SSN.c:60:16: note: in expansion of macro 'XST_FAILURE'
+000-   60 |         return XST_FAILURE;
 000-      |                ^~~~~~~~~~~
-000/cameralink_udp/src/nuc/SSN.c41-1-1declared here0-../src/nuc/SSN.c:41:6: note: declared here
-000-   41 | void DeNoise_FPGA(mat_s32 *NUC_s32, int mean, int N){
+000/cameralink_udp/src/nuc/SSN.c37-1-1declared here0-../src/nuc/SSN.c:37:6: note: declared here
+000-   37 | void DeNoise_FPGA(mat_s32 *NUC_s32, int mean, int N){
 000-      |      ^~~~~~~~~~~~
 000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma_bdring.h:60,
 000-                 from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma.h:467,
-000-                 from ../src/nuc/SSN.c:5:
+000-                 from ../src/nuc/SSN.c:1:
 000/cameralink_udp43-1-1'return' with a value, in function returning void [-Wreturn-type]1-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
 000-   43 | #define XST_FAILURE                     1L
 000-      |                                         ^~
-000/cameralink_udp/src/nuc/SSN.c74-1-1in expansion of macro 'XST_FAILURE'0-../src/nuc/SSN.c:74:16: note: in expansion of macro 'XST_FAILURE'
-000-   74 |         return XST_FAILURE;
+000/cameralink_udp/src/nuc/SSN.c70-1-1in expansion of macro 'XST_FAILURE'0-../src/nuc/SSN.c:70:16: note: in expansion of macro 'XST_FAILURE'
+000-   70 |         return XST_FAILURE;
 000-      |                ^~~~~~~~~~~
-000/cameralink_udp/src/nuc/SSN.c41-1-1declared here0-../src/nuc/SSN.c:41:6: note: declared here
-000-   41 | void DeNoise_FPGA(mat_s32 *NUC_s32, int mean, int N){
+000/cameralink_udp/src/nuc/SSN.c37-1-1declared here0-../src/nuc/SSN.c:37:6: note: declared here
+000-   37 | void DeNoise_FPGA(mat_s32 *NUC_s32, int mean, int N){
 000-      |      ^~~~~~~~~~~~
 000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma_bdring.h:60,
 000-                 from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma.h:467,
-000-                 from ../src/nuc/SSN.c:5:
+000-                 from ../src/nuc/SSN.c:1:
 000/cameralink_udp42-1-1'return' with a value, in function returning void [-Wreturn-type]1-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xstatus.h:42:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
 000-   42 | #define XST_SUCCESS                     0L
 000-      |                                         ^~
-000/cameralink_udp/src/nuc/SSN.c77-1-1in expansion of macro 'XST_SUCCESS'0-../src/nuc/SSN.c:77:12: note: in expansion of macro 'XST_SUCCESS'
-000-   77 |     return XST_SUCCESS;
+000/cameralink_udp/src/nuc/SSN.c73-1-1in expansion of macro 'XST_SUCCESS'0-../src/nuc/SSN.c:73:12: note: in expansion of macro 'XST_SUCCESS'
+000-   73 |     return XST_SUCCESS;
 000-      |            ^~~~~~~~~~~
-000/cameralink_udp/src/nuc/SSN.c41-1-1declared here0-../src/nuc/SSN.c:41:6: note: declared here
-000-   41 | void DeNoise_FPGA(mat_s32 *NUC_s32, int mean, int N){
+000/cameralink_udp/src/nuc/SSN.c37-1-1declared here0-../src/nuc/SSN.c:37:6: note: declared here
+000-   37 | void DeNoise_FPGA(mat_s32 *NUC_s32, int mean, int N){
 000-      |      ^~~~~~~~~~~~
 000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma_bdring.h:60,
 000-                 from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma.h:467,
-000-                 from ../src/nuc/SSN.c:5:
+000-                 from ../src/nuc/SSN.c:1:
 000-../src/nuc/SSN.c: In function 'wait_DeNoise_FPGA':
 000/cameralink_udp43-1-1'return' with a value, in function returning void [-Wreturn-type]1-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
 000-   43 | #define XST_FAILURE                     1L
 000-      |                                         ^~
-000/cameralink_udp/src/nuc/SSN.c93-1-1in expansion of macro 'XST_FAILURE'0-../src/nuc/SSN.c:93:16: note: in expansion of macro 'XST_FAILURE'
-000-   93 |         return XST_FAILURE;
+000/cameralink_udp/src/nuc/SSN.c89-1-1in expansion of macro 'XST_FAILURE'0-../src/nuc/SSN.c:89:16: note: in expansion of macro 'XST_FAILURE'
+000-   89 |         return XST_FAILURE;
 000-      |                ^~~~~~~~~~~
-000/cameralink_udp/src/nuc/SSN.c80-1-1declared here0-../src/nuc/SSN.c:80:6: note: declared here
-000-   80 | void wait_DeNoise_FPGA(mat_s32 *NUC_s32, int mean, int N){
+000/cameralink_udp/src/nuc/SSN.c76-1-1declared here0-../src/nuc/SSN.c:76:6: note: declared here
+000-   76 | void wait_DeNoise_FPGA(mat_s32 *NUC_s32, int mean, int N){
 000-      |      ^~~~~~~~~~~~~~~~~
 000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma_bdring.h:60,
 000-                 from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma.h:467,
-000-                 from ../src/nuc/SSN.c:5:
+000-                 from ../src/nuc/SSN.c:1:
 000/cameralink_udp43-1-1'return' with a value, in function returning void [-Wreturn-type]1-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
 000-   43 | #define XST_FAILURE                     1L
 000-      |                                         ^~
-000/cameralink_udp/src/nuc/SSN.c100-1-1in expansion of macro 'XST_FAILURE'0-../src/nuc/SSN.c:100:16: note: in expansion of macro 'XST_FAILURE'
-000-  100 |         return XST_FAILURE;
+000/cameralink_udp/src/nuc/SSN.c96-1-1in expansion of macro 'XST_FAILURE'0-../src/nuc/SSN.c:96:16: note: in expansion of macro 'XST_FAILURE'
+000-   96 |         return XST_FAILURE;
 000-      |                ^~~~~~~~~~~
-000/cameralink_udp/src/nuc/SSN.c80-1-1declared here0-../src/nuc/SSN.c:80:6: note: declared here
-000-   80 | void wait_DeNoise_FPGA(mat_s32 *NUC_s32, int mean, int N){
+000/cameralink_udp/src/nuc/SSN.c76-1-1declared here0-../src/nuc/SSN.c:76:6: note: declared here
+000-   76 | void wait_DeNoise_FPGA(mat_s32 *NUC_s32, int mean, int N){
 000-      |      ^~~~~~~~~~~~~~~~~
 000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma_bdring.h:60,
 000-                 from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xaxidma.h:467,
-000-                 from ../src/nuc/SSN.c:5:
+000-                 from ../src/nuc/SSN.c:1:
 000/cameralink_udp42-1-1'return' with a value, in function returning void [-Wreturn-type]1-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xstatus.h:42:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
 000-   42 | #define XST_SUCCESS                     0L
 000-      |                                         ^~
-000/cameralink_udp/src/nuc/SSN.c110-1-1in expansion of macro 'XST_SUCCESS'0-../src/nuc/SSN.c:110:12: note: in expansion of macro 'XST_SUCCESS'
-000-  110 |     return XST_SUCCESS;
+000/cameralink_udp/src/nuc/SSN.c106-1-1in expansion of macro 'XST_SUCCESS'0-../src/nuc/SSN.c:106:12: note: in expansion of macro 'XST_SUCCESS'
+000-  106 |     return XST_SUCCESS;
 000-      |            ^~~~~~~~~~~
-000/cameralink_udp/src/nuc/SSN.c80-1-1declared here0-../src/nuc/SSN.c:80:6: note: declared here
-000-   80 | void wait_DeNoise_FPGA(mat_s32 *NUC_s32, int mean, int N){
+000/cameralink_udp/src/nuc/SSN.c76-1-1declared here0-../src/nuc/SSN.c:76:6: note: declared here
+000-   76 | void wait_DeNoise_FPGA(mat_s32 *NUC_s32, int mean, int N){
 000-      |      ^~~~~~~~~~~~~~~~~
 000-'Finished building: ../src/nuc/SSN.c'
-000-' '
-000-'Building file: ../src/nuc/file_op.c'
-000-'Invoking: ARM v8 gcc compiler'
-000-aarch64-none-elf-gcc -Wall -O1 -g3 -c -fmessage-length=0 -MT"src/nuc/file_op.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include -MMD -MP -MF"src/nuc/file_op.d" -MT"src/nuc/file_op.o" -o "src/nuc/file_op.o" "../src/nuc/file_op.c"
-000-In file included from ../src/nuc/utils.h:11,
-000-                 from ../src/nuc/shareOpConfig.h:9,
-000-                 from ../src/nuc/file_op.c:15:
-000/cameralink_udp/src/nuc/InitParam.h26-1-1'struct SSN_param' declared inside parameter list will not be visible outside of this definition or declaration1-../src/nuc/InitParam.h:26:27: warning: 'struct SSN_param' declared inside parameter list will not be visible outside of this definition or declaration
-000-   26 |                    struct SSN_param *ssnParam);
-000-      |                           ^~~~~~~~~
-000-../src/nuc/file_op.c: In function 'Init':
-000/cameralink_udp/src/nuc/file_op.c35-1-1unused variable 'status' [-Wunused-variable]1-../src/nuc/file_op.c:35:6: warning: unused variable 'status' [-Wunused-variable]
-000-   35 |  int status;
-000-      |      ^~~~~~
-000-../src/nuc/file_op.c: In function 'Write':
-000/cameralink_udp/src/nuc/file_op.c70-1-1cast to pointer from integer of different size [-Wint-to-pointer-cast]1-../src/nuc/file_op.c:70:28: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
-000-   70 |     result = f_write(&file,(void*) src_addr,byte_len,&BytesWr);//闂傚倷绀�?幉锟犲礉閺嶎厽鍋￠柨鏇炲�搁崙鐘绘煕閹般劍娅囨い鈺冨厴閹綊宕崟顒佸創闂佽桨绀�?悥濂稿箖濡ゅ懏鍎岄柛娑橈工椤忥拷
-000-      |                            ^
-000-../src/nuc/file_op.c: In function 'Read':
-000/cameralink_udp/src/nuc/file_op.c100-1-1passing argument 2 of 'f_lseek' makes integer from pointer without a cast [-Wint-conversion]1-../src/nuc/file_op.c:100:28: warning: passing argument 2 of 'f_lseek' makes integer from pointer without a cast [-Wint-conversion]
-000-  100 |     result = f_lseek(&file,start_addr);    //闂傚倷鑳堕崕鐢稿疾濠靛锟斤箓宕奸姀銏㈩槸闁诲函缍嗛崑鍡涖�呴弻銉ョ閺夊牆澧界壕鎸庣箾閸繃鎯堟い顐ｎ殙椤︽潙鈹戦鐐毈闁诡喓鍎甸弫鎰緞婵犲嫬鎽嬮梻浣筋嚃閸ㄥ酣宕熼鍏煎創闂傚�?�绀�?幖顐�?磹缁嬫５娲晲閸涱亝鐎婚梺闈涚箞閸婃牠宕曞澶嬬厱闁哄洢鍔屾晶浼存煕濡崵鎳冮柍钘夘�?楠炴瑩宕樿閻╁海绱撴担浠嬪摵闁搞劌鐖奸獮鍫ュΩ瑜濋幏鐑芥晲閸屾稒鐝栫紓浣割槸椤曨厾妲愰幘璇茬闁诡垎鍕簴闂備浇娉曢崰鎰板几婵犳艾绠柨鐕傛�?
-000-      |                            ^~~~~~~~~~
-000-      |                            |
-000-      |                            void *
-000-In file included from ../src/nuc/file_op.h:13,
-000-                 from ../src/nuc/file_op.c:9:
-000/cameralink_udp277-1-1expected 'FSIZE_t' {aka 'long unsigned int'} but argument is of type 'void *'0-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/ff.h:277:35: note: expected 'FSIZE_t' {aka 'long unsigned int'} but argument is of type 'void *'
-000-  277 | FRESULT f_lseek (FIL* fp, FSIZE_t ofs);        /* Move file pointer of the file object */
-000-      |                           ~~~~~~~~^~~
-000-'Finished building: ../src/nuc/file_op.c'
 000-' '
 000-'Building file: ../src/nuc/main.c'
 000-'Invoking: ARM v8 gcc compiler'
@@ -234,191 +118,6 @@
 000-   27 |     Init();
 000-      |     ^~~~
 000-'Finished building: ../src/nuc/main.c'
-000-' '
-000-'Building file: ../src/nuc/shareOp.c'
-000-'Invoking: ARM v8 gcc compiler'
-000-aarch64-none-elf-gcc -Wall -O1 -g3 -c -fmessage-length=0 -MT"src/nuc/shareOp.o" -ID:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include -MMD -MP -MF"src/nuc/shareOp.d" -MT"src/nuc/shareOp.o" -o "src/nuc/shareOp.o" "../src/nuc/shareOp.c"
-000-In file included from ../src/nuc/utils.h:11,
-000-                 from ../src/nuc/shareOpConfig.h:9,
-000-                 from ../src/nuc/shareOp.c:1:
-000/cameralink_udp/src/nuc/InitParam.h26-1-1'struct SSN_param' declared inside parameter list will not be visible outside of this definition or declaration1-../src/nuc/InitParam.h:26:27: warning: 'struct SSN_param' declared inside parameter list will not be visible outside of this definition or declaration
-000-   26 |                    struct SSN_param *ssnParam);
-000-      |                           ^~~~~~~~~
-000-../src/nuc/shareOp.c: In function 'read_share_data':
-000/cameralink_udp/src/nuc/shareOp.c6-1-1passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]1-../src/nuc/shareOp.c:6:38: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
-000-    6 |   shareData->data[i] = Xil_In32(addr + i);
-000-      |                                 ~~~~~^~~
-000-      |                                      |
-000-      |                                      int *
-000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xscugic.h:189,
-000-                 from ../src/nuc/shareOpConfig.h:8,
-000-                 from ../src/nuc/shareOp.c:1:
-000/cameralink_udp134-1-1expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'0-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xil_io.h:134:36: note: expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'
-000-  134 | static INLINE u32 Xil_In32(UINTPTR Addr)
-000-      |                            ~~~~~~~~^~~~
-000/cameralink_udp/src/nuc/shareOp.c8-1-1passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]1-../src/nuc/shareOp.c:8:12: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
-000-    8 |  Xil_Out32(flag, 0);
-000-      |            ^~~~
-000-      |            |
-000-      |            int *
-000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xscugic.h:189,
-000-                 from ../src/nuc/shareOpConfig.h:8,
-000-                 from ../src/nuc/shareOp.c:1:
-000/cameralink_udp208-1-1expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'0-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'
-000-  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
-000-      |                              ~~~~~~~~^~~~
-000-../src/nuc/shareOp.c: In function 'write_share_data':
-000/cameralink_udp/src/nuc/shareOp.c14-1-1passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]1-../src/nuc/shareOp.c:14:18: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
-000-   14 |   Xil_Out32(addr + i, shareData->data[i]);
-000-      |             ~~~~~^~~
-000-      |                  |
-000-      |                  int *
-000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xscugic.h:189,
-000-                 from ../src/nuc/shareOpConfig.h:8,
-000-                 from ../src/nuc/shareOp.c:1:
-000/cameralink_udp208-1-1expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'0-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'
-000-  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
-000-      |                              ~~~~~~~~^~~~
-000/cameralink_udp/src/nuc/shareOp.c16-1-1passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]1-../src/nuc/shareOp.c:16:12: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
-000-   16 |  Xil_Out32(flag, 1);
-000-      |            ^~~~
-000-      |            |
-000-      |            int *
-000-In file included from D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xscugic.h:189,
-000-                 from ../src/nuc/shareOpConfig.h:8,
-000-                 from ../src/nuc/shareOp.c:1:
-000/cameralink_udp208-1-1expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'0-D:/project/vitis_final/lwip_modi_3/export/lwip_modi_3/sw/lwip_modi_3/standalone_domain/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'long unsigned int'} but argument is of type 'int *'
-000-  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
-000-      |                              ~~~~~~~~^~~~
-000-In file included from ../src/nuc/shareOp.c:1:
-000-../src/nuc/shareOp.c: In function 'read_weight':
-000/cameralink_udp/src/nuc/shareOpConfig.h20-1-1passing argument 2 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/shareOpConfig.h:20:25: warning: passing argument 2 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]
-000-   20 | #define SHARE_BASE_ADDR 0x70000000
-000-      |                         ^
-000-      |                         |
-000-      |                         int
-000/cameralink_udp/src/nuc/shareOpConfig.h29-1-1in expansion of macro 'SHARE_BASE_ADDR'0-../src/nuc/shareOpConfig.h:29:27: note: in expansion of macro 'SHARE_BASE_ADDR'
-000-   29 | #define WEIGHT_BASE       SHARE_BASE_ADDR + (640 * 512 * 4 + 0x20)
-000-      |                           ^~~~~~~~~~~~~~~
-000/cameralink_udp/src/nuc/shareOp.c20-1-1in expansion of macro 'WEIGHT_BASE'0-../src/nuc/shareOp.c:20:30: note: in expansion of macro 'WEIGHT_BASE'
-000-   20 |  read_share_data(weight_s32, WEIGHT_BASE, WEIGHT_FLAG_BASE);
-000-      |                              ^~~~~~~~~~~
-000/cameralink_udp/src/nuc/shareOp.c3-1-1expected 'int *' but argument is of type 'int'0-../src/nuc/shareOp.c:3:47: note: expected 'int *' but argument is of type 'int'
-000-    3 | void read_share_data(mat_s32 *shareData, int *addr, int *flag){
-000-      |                                          ~~~~~^~~~
-000-In file included from ../src/nuc/shareOp.c:1:
-000/cameralink_udp/src/nuc/shareOpConfig.h20-1-1passing argument 3 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/shareOpConfig.h:20:25: warning: passing argument 3 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]
-000-   20 | #define SHARE_BASE_ADDR 0x70000000
-000-      |                         ^
-000-      |                         |
-000-      |                         int
-000/cameralink_udp/src/nuc/shareOpConfig.h25-1-1in expansion of macro 'SHARE_BASE_ADDR'0-../src/nuc/shareOpConfig.h:25:28: note: in expansion of macro 'SHARE_BASE_ADDR'
-000-   25 | #define WEIGHT_FLAG_BASE   SHARE_BASE_ADDR + 0xc
-000-      |                            ^~~~~~~~~~~~~~~
-000/cameralink_udp/src/nuc/shareOp.c20-1-1in expansion of macro 'WEIGHT_FLAG_BASE'0-../src/nuc/shareOp.c:20:43: note: in expansion of macro 'WEIGHT_FLAG_BASE'
-000-   20 |  read_share_data(weight_s32, WEIGHT_BASE, WEIGHT_FLAG_BASE);
-000-      |                                           ^~~~~~~~~~~~~~~~
-000/cameralink_udp/src/nuc/shareOp.c3-1-1expected 'int *' but argument is of type 'int'0-../src/nuc/shareOp.c:3:58: note: expected 'int *' but argument is of type 'int'
-000-    3 | void read_share_data(mat_s32 *shareData, int *addr, int *flag){
-000-      |                                                     ~~~~~^~~~
-000-In file included from ../src/nuc/shareOp.c:1:
-000-../src/nuc/shareOp.c: In function 'write_weight':
-000/cameralink_udp/src/nuc/shareOpConfig.h20-1-1passing argument 2 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/shareOpConfig.h:20:25: warning: passing argument 2 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]
-000-   20 | #define SHARE_BASE_ADDR 0x70000000
-000-      |                         ^
-000-      |                         |
-000-      |                         int
-000/cameralink_udp/src/nuc/shareOpConfig.h29-1-1in expansion of macro 'SHARE_BASE_ADDR'0-../src/nuc/shareOpConfig.h:29:27: note: in expansion of macro 'SHARE_BASE_ADDR'
-000-   29 | #define WEIGHT_BASE       SHARE_BASE_ADDR + (640 * 512 * 4 + 0x20)
-000-      |                           ^~~~~~~~~~~~~~~
-000/cameralink_udp/src/nuc/shareOp.c24-1-1in expansion of macro 'WEIGHT_BASE'0-../src/nuc/shareOp.c:24:31: note: in expansion of macro 'WEIGHT_BASE'
-000-   24 |  write_share_data(weight_s32, WEIGHT_BASE, WEIGHT_FLAG_BASE);
-000-      |                               ^~~~~~~~~~~
-000/cameralink_udp/src/nuc/shareOp.c11-1-1expected 'int *' but argument is of type 'int'0-../src/nuc/shareOp.c:11:48: note: expected 'int *' but argument is of type 'int'
-000-   11 | void write_share_data(mat_s32 *shareData, int *addr, int *flag){
-000-      |                                           ~~~~~^~~~
-000-In file included from ../src/nuc/shareOp.c:1:
-000/cameralink_udp/src/nuc/shareOpConfig.h20-1-1passing argument 3 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/shareOpConfig.h:20:25: warning: passing argument 3 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]
-000-   20 | #define SHARE_BASE_ADDR 0x70000000
-000-      |                         ^
-000-      |                         |
-000-      |                         int
-000/cameralink_udp/src/nuc/shareOpConfig.h25-1-1in expansion of macro 'SHARE_BASE_ADDR'0-../src/nuc/shareOpConfig.h:25:28: note: in expansion of macro 'SHARE_BASE_ADDR'
-000-   25 | #define WEIGHT_FLAG_BASE   SHARE_BASE_ADDR + 0xc
-000-      |                            ^~~~~~~~~~~~~~~
-000/cameralink_udp/src/nuc/shareOp.c24-1-1in expansion of macro 'WEIGHT_FLAG_BASE'0-../src/nuc/shareOp.c:24:44: note: in expansion of macro 'WEIGHT_FLAG_BASE'
-000-   24 |  write_share_data(weight_s32, WEIGHT_BASE, WEIGHT_FLAG_BASE);
-000-      |                                            ^~~~~~~~~~~~~~~~
-000/cameralink_udp/src/nuc/shareOp.c11-1-1expected 'int *' but argument is of type 'int'0-../src/nuc/shareOp.c:11:59: note: expected 'int *' but argument is of type 'int'
-000-   11 | void write_share_data(mat_s32 *shareData, int *addr, int *flag){
-000-      |                                                      ~~~~~^~~~
-000-In file included from ../src/nuc/shareOp.c:1:
-000-../src/nuc/shareOp.c: In function 'read_nuc':
-000/cameralink_udp/src/nuc/shareOpConfig.h20-1-1passing argument 2 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/shareOpConfig.h:20:25: warning: passing argument 2 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]
-000-   20 | #define SHARE_BASE_ADDR 0x70000000
-000-      |                         ^
-000-      |                         |
-000-      |                         int
-000/cameralink_udp/src/nuc/shareOpConfig.h28-1-1in expansion of macro 'SHARE_BASE_ADDR'0-../src/nuc/shareOpConfig.h:28:26: note: in expansion of macro 'SHARE_BASE_ADDR'
-000-   28 | #define NUC_BASE         SHARE_BASE_ADDR + 0x20
-000-      |                          ^~~~~~~~~~~~~~~
-000/cameralink_udp/src/nuc/shareOp.c28-1-1in expansion of macro 'NUC_BASE'0-../src/nuc/shareOp.c:28:27: note: in expansion of macro 'NUC_BASE'
-000-   28 |  read_share_data(nuc_s32, NUC_BASE, IMAGE_FLAG_BASE);
-000-      |                           ^~~~~~~~
-000/cameralink_udp/src/nuc/shareOp.c3-1-1expected 'int *' but argument is of type 'int'0-../src/nuc/shareOp.c:3:47: note: expected 'int *' but argument is of type 'int'
-000-    3 | void read_share_data(mat_s32 *shareData, int *addr, int *flag){
-000-      |                                          ~~~~~^~~~
-000-In file included from ../src/nuc/shareOp.c:1:
-000/cameralink_udp/src/nuc/shareOpConfig.h20-1-1passing argument 3 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/shareOpConfig.h:20:25: warning: passing argument 3 of 'read_share_data' makes pointer from integer without a cast [-Wint-conversion]
-000-   20 | #define SHARE_BASE_ADDR 0x70000000
-000-      |                         ^
-000-      |                         |
-000-      |                         int
-000/cameralink_udp/src/nuc/shareOpConfig.h24-1-1in expansion of macro 'SHARE_BASE_ADDR'0-../src/nuc/shareOpConfig.h:24:27: note: in expansion of macro 'SHARE_BASE_ADDR'
-000-   24 | #define IMAGE_FLAG_BASE   SHARE_BASE_ADDR + 0x8
-000-      |                           ^~~~~~~~~~~~~~~
-000/cameralink_udp/src/nuc/shareOp.c28-1-1in expansion of macro 'IMAGE_FLAG_BASE'0-../src/nuc/shareOp.c:28:37: note: in expansion of macro 'IMAGE_FLAG_BASE'
-000-   28 |  read_share_data(nuc_s32, NUC_BASE, IMAGE_FLAG_BASE);
-000-      |                                     ^~~~~~~~~~~~~~~
-000/cameralink_udp/src/nuc/shareOp.c3-1-1expected 'int *' but argument is of type 'int'0-../src/nuc/shareOp.c:3:58: note: expected 'int *' but argument is of type 'int'
-000-    3 | void read_share_data(mat_s32 *shareData, int *addr, int *flag){
-000-      |                                                     ~~~~~^~~~
-000-In file included from ../src/nuc/shareOp.c:1:
-000-../src/nuc/shareOp.c: In function 'write_nuc':
-000/cameralink_udp/src/nuc/shareOpConfig.h20-1-1passing argument 2 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/shareOpConfig.h:20:25: warning: passing argument 2 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]
-000-   20 | #define SHARE_BASE_ADDR 0x70000000
-000-      |                         ^
-000-      |                         |
-000-      |                         int
-000/cameralink_udp/src/nuc/shareOpConfig.h28-1-1in expansion of macro 'SHARE_BASE_ADDR'0-../src/nuc/shareOpConfig.h:28:26: note: in expansion of macro 'SHARE_BASE_ADDR'
-000-   28 | #define NUC_BASE         SHARE_BASE_ADDR + 0x20
-000-      |                          ^~~~~~~~~~~~~~~
-000/cameralink_udp/src/nuc/shareOp.c32-1-1in expansion of macro 'NUC_BASE'0-../src/nuc/shareOp.c:32:28: note: in expansion of macro 'NUC_BASE'
-000-   32 |  write_share_data(nuc_s32, NUC_BASE, IMAGE_FLAG_BASE);
-000-      |                            ^~~~~~~~
-000/cameralink_udp/src/nuc/shareOp.c11-1-1expected 'int *' but argument is of type 'int'0-../src/nuc/shareOp.c:11:48: note: expected 'int *' but argument is of type 'int'
-000-   11 | void write_share_data(mat_s32 *shareData, int *addr, int *flag){
-000-      |                                           ~~~~~^~~~
-000-In file included from ../src/nuc/shareOp.c:1:
-000/cameralink_udp/src/nuc/shareOpConfig.h20-1-1passing argument 3 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]1-../src/nuc/shareOpConfig.h:20:25: warning: passing argument 3 of 'write_share_data' makes pointer from integer without a cast [-Wint-conversion]
-000-   20 | #define SHARE_BASE_ADDR 0x70000000
-000-      |                         ^
-000-      |                         |
-000-      |                         int
-000/cameralink_udp/src/nuc/shareOpConfig.h24-1-1in expansion of macro 'SHARE_BASE_ADDR'0-../src/nuc/shareOpConfig.h:24:27: note: in expansion of macro 'SHARE_BASE_ADDR'
-000-   24 | #define IMAGE_FLAG_BASE   SHARE_BASE_ADDR + 0x8
-000-      |                           ^~~~~~~~~~~~~~~
-000/cameralink_udp/src/nuc/shareOp.c32-1-1in expansion of macro 'IMAGE_FLAG_BASE'0-../src/nuc/shareOp.c:32:38: note: in expansion of macro 'IMAGE_FLAG_BASE'
-000-   32 |  write_share_data(nuc_s32, NUC_BASE, IMAGE_FLAG_BASE);
-000-      |                                      ^~~~~~~~~~~~~~~
-000/cameralink_udp/src/nuc/shareOp.c11-1-1expected 'int *' but argument is of type 'int'0-../src/nuc/shareOp.c:11:59: note: expected 'int *' but argument is of type 'int'
-000-   11 | void write_share_data(mat_s32 *shareData, int *addr, int *flag){
-000-      |                                                      ~~~~~^~~~
-000-../src/nuc/shareOp.c: In function 'init_share_addr':
-000/cameralink_udp/src/nuc/shareOp.c37-1-1implicit declaration of function 'Xil_SetTlbAttributes' [-Wimplicit-function-declaration]1-../src/nuc/shareOp.c:37:2: warning: implicit declaration of function 'Xil_SetTlbAttributes' [-Wimplicit-function-declaration]
-000-   37 |  Xil_SetTlbAttributes(SHARE_BASE_ADDR, 0x14de2);  //绂佺�? 0xfffffff0 鐨� Cache 灞炴��
-000-      |  ^~~~~~~~~~~~~~~~~~~~
-000-'Finished building: ../src/nuc/shareOp.c'
 000-' '
 000-'Building file: ../src/lwip_app.c'
 000-'Invoking: ARM v8 gcc compiler'
@@ -445,9 +144,9 @@
 000-'Invoking: ARM v8 Print Size'
 000-aarch64-none-elf-size cameralink_udp.elf  |tee "cameralink_udp.elf.size"
 000-   text	   data	    bss	    dec	    hex	filename
-000- 315823	   8384	499192053	499516260	1dc60364	cameralink_udp.elf
+000- 315375	   8384	499192053	499515812	1dc601a4	cameralink_udp.elf
 000-'Finished building: cameralink_udp.elf.size'
 000-' '
 00255-
-19:33:19 Build Finished (took 3s.182ms)
+15:51:23 Build Finished (took 1s.895ms)
 
